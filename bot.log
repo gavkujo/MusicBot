@@ -890,3 +890,99 @@ RuntimeError: PyNaCl library needed in order to use voice
 [2021-09-14 17:08:59,786] INFO [discord.player.cleanup:170] ffmpeg process 263 successfully terminated with return code of 0.
 [2021-09-14 17:12:04,673] INFO [discord.player.cleanup:158] Preparing to terminate ffmpeg process 298.
 [2021-09-14 17:12:04,674] INFO [discord.player.cleanup:170] ffmpeg process 298 successfully terminated with return code of 0.
+[2021-09-15 23:13:11,610] INFO [discord.client.login:510] logging in using static token
+[2021-09-15 23:13:12,520] INFO [discord.gateway.identify:403] Shard ID None has sent the IDENTIFY payload.
+[2021-09-15 23:13:12,995] INFO [discord.gateway.received_message:494] Shard ID None has connected to Gateway: ["gateway-prd-main-n4mz",{"micros":184972,"calls":["discord-sessions-blue-prd-2-6",{"micros":181131,"calls":["start_session",{"micros":176063,"calls":["api-prd-main-p43p",{"micros":151207,"calls":["get_user",{"micros":30442},"add_authorized_ip",{"micros":7678},"get_guilds",{"micros":14704},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":2,"calls":[]}]}]}] (Session ID: 881a36b49d276383c0dd4ad1ef0fa3ea).
+[2021-09-15 23:13:15,046] INFO [root.on_ready:19] Logged in as anu malik
+[2021-09-15 23:13:36,897] INFO [discord.voice_client.connect:329] Connecting to voice...
+[2021-09-15 23:13:36,898] INFO [discord.voice_client.prepare_handshake:311] Starting voice handshake... (connection attempt 1)
+[2021-09-15 23:13:37,418] INFO [discord.voice_client.finish_handshake:315] Voice handshake complete. Endpoint found india10012.discord.media
+[2021-09-15 23:13:37,509] INFO [discord.gateway.initial_connection:862] selected the voice protocol for use (xsalsa20_poly1305_lite)
+[2021-09-15 23:13:37,524] INFO [discord.gateway.load_secret_key:880] received secret key for voice connection
+[2021-09-15 23:13:38,069] WARNING [root.on_command_error:30] Ignoring exception in command play:
+[2021-09-15 23:13:38,119] WARNING [root.on_command_error:31] 
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\discord\ext\commands\core.py", line 85, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\LENOVO\Desktop\Github (Do not delete)\anumalik\musicbot\cogs\music.py", line 284, in play
+    self._play_song(client, state, video)
+  File "C:\Users\LENOVO\Desktop\Github (Do not delete)\anumalik\musicbot\cogs\music.py", line 169, in _play_song
+    discord.FFmpegPCMAudio(song.stream_url, before_options=FFMPEG_BEFORE_OPTS), volume=state.volume)
+  File "C:\Python39\lib\site-packages\discord\player.py", line 225, in __init__
+    super().__init__(source, executable=executable, args=args, **subprocess_kwargs)
+  File "C:\Python39\lib\site-packages\discord\player.py", line 138, in __init__
+    self._process = self._spawn_process(args, **kwargs)
+  File "C:\Python39\lib\site-packages\discord\player.py", line 147, in _spawn_process
+    raise ClientException(executable + ' was not found.') from None
+discord.errors.ClientException: ffmpeg was not found.
+
+[2021-09-15 23:13:44,460] INFO [discord.client.run:715] Received signal to terminate bot and event loop.
+[2021-09-15 23:13:44,466] INFO [discord.client.run:718] Cleaning up tasks.
+[2021-09-15 23:13:44,473] INFO [discord.client._cancel_tasks:71] Cleaning up after 3 tasks.
+[2021-09-15 23:13:44,479] INFO [discord.voice_client.voice_disconnect:304] The voice handshake is being terminated for Channel ID 838803234390802517 (Guild ID 838803234390802513)
+[2021-09-15 23:13:44,486] INFO [discord.client._cancel_tasks:76] All tasks finished cancelling.
+[2021-09-15 23:13:44,488] INFO [discord.client._cleanup_loop:94] Closing the event loop.
+[2021-09-15 23:14:23,566] INFO [discord.client.login:510] logging in using static token
+[2021-09-15 23:14:24,420] INFO [discord.gateway.identify:403] Shard ID None has sent the IDENTIFY payload.
+[2021-09-15 23:14:24,817] INFO [discord.gateway.received_message:494] Shard ID None has connected to Gateway: ["gateway-prd-main-xmx0",{"micros":102067,"calls":["discord-sessions-blue-prd-2-27",{"micros":95357,"calls":["start_session",{"micros":65294,"calls":["api-prd-main-wqrz",{"micros":58827,"calls":["get_user",{"micros":5995},"add_authorized_ip",{"micros":3907},"get_guilds",{"micros":10385},"coros_wait",{"micros":0}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":2,"calls":[]}]}]}] (Session ID: 3dea69ac2aa9f9b56e0ebe39e3f1682a).
+[2021-09-15 23:14:26,872] INFO [root.on_ready:19] Logged in as anu malik
+[2021-09-15 23:14:32,813] INFO [discord.voice_client.connect:329] Connecting to voice...
+[2021-09-15 23:14:32,816] INFO [discord.voice_client.prepare_handshake:311] Starting voice handshake... (connection attempt 1)
+[2021-09-15 23:14:33,336] INFO [discord.voice_client.finish_handshake:315] Voice handshake complete. Endpoint found india10012.discord.media
+[2021-09-15 23:14:33,414] INFO [discord.gateway.initial_connection:862] selected the voice protocol for use (xsalsa20_poly1305_lite)
+[2021-09-15 23:14:33,424] INFO [discord.gateway.load_secret_key:880] received secret key for voice connection
+[2021-09-15 23:14:33,887] WARNING [root.on_command_error:30] Ignoring exception in command play:
+[2021-09-15 23:14:34,037] WARNING [root.on_command_error:31] 
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\discord\ext\commands\core.py", line 85, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\LENOVO\Desktop\Github (Do not delete)\anumalik\musicbot\cogs\music.py", line 284, in play
+    self._play_song(client, state, video)
+  File "C:\Users\LENOVO\Desktop\Github (Do not delete)\anumalik\musicbot\cogs\music.py", line 169, in _play_song
+    discord.FFmpegPCMAudio(song.stream_url, before_options=FFMPEG_BEFORE_OPTS), volume=state.volume)
+  File "C:\Python39\lib\site-packages\discord\player.py", line 225, in __init__
+    super().__init__(source, executable=executable, args=args, **subprocess_kwargs)
+  File "C:\Python39\lib\site-packages\discord\player.py", line 138, in __init__
+    self._process = self._spawn_process(args, **kwargs)
+  File "C:\Python39\lib\site-packages\discord\player.py", line 147, in _spawn_process
+    raise ClientException(executable + ' was not found.') from None
+discord.errors.ClientException: ffmpeg was not found.
+
+[2021-09-15 23:14:44,077] INFO [discord.client.run:715] Received signal to terminate bot and event loop.
+[2021-09-15 23:14:44,078] INFO [discord.client.run:718] Cleaning up tasks.
+[2021-09-15 23:14:44,079] INFO [discord.client._cancel_tasks:71] Cleaning up after 3 tasks.
+[2021-09-15 23:14:44,082] INFO [discord.voice_client.voice_disconnect:304] The voice handshake is being terminated for Channel ID 838803234390802517 (Guild ID 838803234390802513)
+[2021-09-15 23:14:44,083] INFO [discord.client._cancel_tasks:76] All tasks finished cancelling.
+[2021-09-15 23:14:44,085] INFO [discord.client._cleanup_loop:94] Closing the event loop.
+[2021-09-15 23:15:12,145] INFO [discord.client.login:510] logging in using static token
+[2021-09-15 23:15:13,024] INFO [discord.gateway.identify:403] Shard ID None has sent the IDENTIFY payload.
+[2021-09-15 23:15:13,406] INFO [discord.gateway.received_message:494] Shard ID None has connected to Gateway: ["gateway-prd-main-ds4t",{"micros":65043,"calls":["discord-sessions-blue-prd-2-95",{"micros":64143,"calls":["start_session",{"micros":35170,"calls":["api-prd-main-6mjd",{"micros":31686,"calls":["get_user",{"micros":3083},"add_authorized_ip",{"micros":1476},"get_guilds",{"micros":5940},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":3,"calls":[]},"presence_connect",{"micros":8252,"calls":[]}]}]}] (Session ID: aa5cf5b7d448eeeada6d0fd7fe316488).
+[2021-09-15 23:15:15,479] INFO [root.on_ready:19] Logged in as anu malik
+[2021-09-15 23:15:25,109] INFO [discord.voice_client.connect:329] Connecting to voice...
+[2021-09-15 23:15:25,110] INFO [discord.voice_client.prepare_handshake:311] Starting voice handshake... (connection attempt 1)
+[2021-09-15 23:15:25,647] INFO [discord.voice_client.finish_handshake:315] Voice handshake complete. Endpoint found india10012.discord.media
+[2021-09-15 23:15:25,756] INFO [discord.gateway.initial_connection:862] selected the voice protocol for use (xsalsa20_poly1305_lite)
+[2021-09-15 23:15:25,766] INFO [discord.gateway.load_secret_key:880] received secret key for voice connection
+[2021-09-15 23:15:26,420] WARNING [root.on_command_error:30] Ignoring exception in command play:
+[2021-09-15 23:15:26,428] WARNING [root.on_command_error:31] 
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\discord\ext\commands\core.py", line 85, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\LENOVO\Desktop\Github (Do not delete)\anumalik\musicbot\cogs\music.py", line 284, in play
+    self._play_song(client, state, video)
+  File "C:\Users\LENOVO\Desktop\Github (Do not delete)\anumalik\musicbot\cogs\music.py", line 169, in _play_song
+    discord.FFmpegPCMAudio(song.stream_url, before_options=FFMPEG_BEFORE_OPTS), volume=state.volume)
+  File "C:\Python39\lib\site-packages\discord\player.py", line 225, in __init__
+    super().__init__(source, executable=executable, args=args, **subprocess_kwargs)
+  File "C:\Python39\lib\site-packages\discord\player.py", line 138, in __init__
+    self._process = self._spawn_process(args, **kwargs)
+  File "C:\Python39\lib\site-packages\discord\player.py", line 147, in _spawn_process
+    raise ClientException(executable + ' was not found.') from None
+discord.errors.ClientException: ffmpeg was not found.
+
+[2021-09-15 23:17:04,352] INFO [discord.client.run:715] Received signal to terminate bot and event loop.
+[2021-09-15 23:17:04,355] INFO [discord.client.run:718] Cleaning up tasks.
+[2021-09-15 23:17:04,356] INFO [discord.client._cancel_tasks:71] Cleaning up after 3 tasks.
+[2021-09-15 23:17:04,359] INFO [discord.voice_client.voice_disconnect:304] The voice handshake is being terminated for Channel ID 838803234390802517 (Guild ID 838803234390802513)
+[2021-09-15 23:17:04,364] INFO [discord.client._cancel_tasks:76] All tasks finished cancelling.
+[2021-09-15 23:17:04,366] INFO [discord.client._cleanup_loop:94] Closing the event loop.
