@@ -1,0 +1,892 @@
+[2021-09-14 13:59:28,419] INFO [discord.client.login:510] logging in using static token
+[2021-09-14 13:59:28,723] INFO [discord.gateway.identify:403] Shard ID None has sent the IDENTIFY payload.
+[2021-09-14 13:59:28,842] INFO [discord.gateway.received_message:494] Shard ID None has connected to Gateway: ["gateway-prd-main-s46b",{"micros":82466,"calls":["discord-sessions-blue-prd-2-39",{"micros":81662,"calls":["start_session",{"micros":35989,"calls":["api-prd-main-nbc8",{"micros":29975,"calls":["get_user",{"micros":4159},"add_authorized_ip",{"micros":1749},"get_guilds",{"micros":4392},"coros_wait",{"micros":0}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":37088,"calls":[]}]}]}] (Session ID: 44e7edfdbc44c51931d59d6d65d0f007).
+[2021-09-14 13:59:30,922] INFO [root.on_ready:15] Logged in as anu malik
+[2021-09-14 14:00:40,446] WARNING [root.on_command_error:31] Ignoring exception in command play:
+[2021-09-14 14:00:40,448] WARNING [root.on_command_error:32] 
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/core.py", line 85, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/home/runner/py-music-bot/musicbot/cogs/music.py", line 264, in play
+    client = await channel.connect()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/abc.py", line 1277, in connect
+    voice = cls(client, self)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/voice_client.py", line 199, in __init__
+    raise RuntimeError("PyNaCl library needed in order to use voice")
+RuntimeError: PyNaCl library needed in order to use voice
+
+[2021-09-14 14:00:51,669] INFO [discord.client.run:718] Cleaning up tasks.
+[2021-09-14 14:00:51,670] INFO [discord.client._cancel_tasks:71] Cleaning up after 1 tasks.
+[2021-09-14 14:00:51,672] INFO [discord.client._cancel_tasks:76] All tasks finished cancelling.
+[2021-09-14 14:00:51,672] INFO [discord.client._cleanup_loop:94] Closing the event loop.
+[2021-09-14 14:01:08,798] INFO [discord.client.login:510] logging in using static token
+[2021-09-14 14:01:09,025] INFO [discord.gateway.identify:403] Shard ID None has sent the IDENTIFY payload.
+[2021-09-14 14:01:09,184] INFO [discord.gateway.received_message:494] Shard ID None has connected to Gateway: ["gateway-prd-main-wwlc",{"micros":116917,"calls":["discord-sessions-blue-prd-2-79",{"micros":116115,"calls":["start_session",{"micros":35572,"calls":["api-prd-main-rkv7",{"micros":31343,"calls":["get_user",{"micros":3210},"add_authorized_ip",{"micros":2035},"get_guilds",{"micros":3971},"coros_wait",{"micros":0}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":62277,"calls":[]}]}]}] (Session ID: 6b535efe33e49c260041b64590039adf).
+[2021-09-14 14:01:11,223] INFO [root.on_ready:15] Logged in as anu malik
+[2021-09-14 14:01:37,175] INFO [discord.voice_client.connect:329] Connecting to voice...
+[2021-09-14 14:01:37,176] INFO [discord.voice_client.prepare_handshake:311] Starting voice handshake... (connection attempt 1)
+[2021-09-14 14:01:37,448] INFO [discord.voice_client.finish_handshake:315] Voice handshake complete. Endpoint found india10012.discord.media
+[2021-09-14 14:01:37,581] WARNING [root.on_command_error:31] Ignoring exception in command play:
+[2021-09-14 14:01:37,586] WARNING [root.on_command_error:32] 
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/core.py", line 85, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/home/runner/py-music-bot/musicbot/cogs/music.py", line 245, in play
+    video = Video(url, ctx.author)
+  File "/home/runner/py-music-bot/musicbot/video.py", line 18, in __init__
+    video = self._get_info(url_or_search)
+  File "/home/runner/py-music-bot/musicbot/video.py", line 34, in _get_info
+    info["entries"][0]["url"])  # get info for first video
+IndexError: list index out of range
+
+[2021-09-14 14:01:38,858] INFO [discord.gateway.initial_connection:862] selected the voice protocol for use (xsalsa20_poly1305_lite)
+[2021-09-14 14:01:39,081] INFO [discord.gateway.load_secret_key:880] received secret key for voice connection
+[2021-09-14 14:01:40,122] INFO [root.play:268] Now playing 'Prophet Posse-Notha Nigga Car Clothes'
+[2021-09-14 14:02:24,156] INFO [discord.player.cleanup:158] Preparing to terminate ffmpeg process 346.
+[2021-09-14 14:02:24,156] INFO [discord.player.cleanup:166] ffmpeg process 346 has not terminated. Waiting to terminate...
+[2021-09-14 14:02:24,161] INFO [discord.player.cleanup:168] ffmpeg process 346 should have terminated with a return code of -9.
+[2021-09-14 14:03:39,787] INFO [discord.player.cleanup:158] Preparing to terminate ffmpeg process 353.
+[2021-09-14 14:03:39,788] INFO [discord.player.cleanup:170] ffmpeg process 353 successfully terminated with return code of 0.
+[2021-09-14 14:03:39,789] INFO [discord.voice_client.voice_disconnect:304] The voice handshake is being terminated for Channel ID 851017211903868931 (Guild ID 851017211422048257)
+[2021-09-14 14:03:39,790] INFO [discord.voice_client.poll_voice_ws:422] Disconnecting from voice normally, close code 1000.
+[2021-09-14 14:04:01,007] INFO [discord.voice_client.connect:329] Connecting to voice...
+[2021-09-14 14:04:01,007] INFO [discord.voice_client.prepare_handshake:311] Starting voice handshake... (connection attempt 1)
+[2021-09-14 14:04:01,272] INFO [discord.voice_client.finish_handshake:315] Voice handshake complete. Endpoint found india10012.discord.media
+[2021-09-14 14:04:02,701] INFO [discord.gateway.initial_connection:862] selected the voice protocol for use (xsalsa20_poly1305_lite)
+[2021-09-14 14:04:02,936] INFO [discord.gateway.load_secret_key:880] received secret key for voice connection
+[2021-09-14 14:04:04,067] INFO [root.play:268] Now playing 'Nigga Cat'
+[2021-09-14 14:05:07,864] INFO [discord.player.cleanup:158] Preparing to terminate ffmpeg process 374.
+[2021-09-14 14:05:07,866] INFO [discord.player.cleanup:170] ffmpeg process 374 successfully terminated with return code of 0.
+[2021-09-14 14:05:07,867] INFO [discord.voice_client.voice_disconnect:304] The voice handshake is being terminated for Channel ID 851017211903868931 (Guild ID 851017211422048257)
+[2021-09-14 14:05:07,868] INFO [discord.voice_client.poll_voice_ws:422] Disconnecting from voice normally, close code 1000.
+[2021-09-14 14:05:58,458] INFO [discord.client.login:510] logging in using static token
+[2021-09-14 14:05:58,809] INFO [discord.gateway.identify:403] Shard ID None has sent the IDENTIFY payload.
+[2021-09-14 14:05:59,046] INFO [discord.gateway.received_message:494] Shard ID None has connected to Gateway: ["gateway-prd-main-b5mb",{"micros":187878,"calls":["discord-sessions-blue-prd-2-17",{"micros":187094,"calls":["start_session",{"micros":105829,"calls":["api-prd-main-jlsz",{"micros":57402,"calls":["get_user",{"micros":7543},"add_authorized_ip",{"micros":4626},"get_guilds",{"micros":8453},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":3,"calls":[]},"presence_connect",{"micros":61689,"calls":[]}]}]}] (Session ID: 82c877055183b330dc307c82981a56bb).
+[2021-09-14 14:06:01,316] INFO [root.on_ready:15] Logged in as anu malik
+[2021-09-14 14:06:48,533] INFO [discord.client.login:510] logging in using static token
+[2021-09-14 14:06:48,823] INFO [discord.gateway.identify:403] Shard ID None has sent the IDENTIFY payload.
+[2021-09-14 14:06:49,022] INFO [discord.gateway.received_message:494] Shard ID None has connected to Gateway: ["gateway-prd-main-cpb9",{"micros":160608,"calls":["discord-sessions-blue-prd-2-66",{"micros":159721,"calls":["start_session",{"micros":120802,"calls":["api-prd-main-djkp",{"micros":115145,"calls":["get_user",{"micros":7845},"add_authorized_ip",{"micros":1774},"get_guilds",{"micros":52937},"coros_wait",{"micros":0}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":22702,"calls":[]}]}]}] (Session ID: 76b4b0fa7a1b556c8f9de97934a0bf6f).
+[2021-09-14 14:06:51,174] INFO [root.on_ready:15] Logged in as anu malik
+[2021-09-14 14:07:22,777] INFO [discord.voice_client.connect:329] Connecting to voice...
+[2021-09-14 14:07:22,779] INFO [discord.voice_client.prepare_handshake:311] Starting voice handshake... (connection attempt 1)
+[2021-09-14 14:07:23,720] INFO [discord.voice_client.finish_handshake:315] Voice handshake complete. Endpoint found india10012.discord.media
+[2021-09-14 14:07:25,216] INFO [discord.gateway.initial_connection:862] selected the voice protocol for use (xsalsa20_poly1305_lite)
+[2021-09-14 14:07:25,458] INFO [discord.gateway.load_secret_key:880] received secret key for voice connection
+[2021-09-14 14:07:26,784] INFO [root.play:268] Now playing 'BAJRANG DAL DJ 2019 | Top Bhakti Dj Song | JAI SHRI RAM | Chathrapathi Shivaji Maharaj- जय श्री राम'
+[2021-09-14 14:09:15,074] WARNING [root.play:247] Error downloading video: [0;31mERROR:[0m Unsupported URL: https://open.spotify.com/track/5shstH4u2hrz4DD3eSttc5?si=089d0e2f98b84828
+[2021-09-14 14:10:55,040] INFO [discord.player.cleanup:158] Preparing to terminate ffmpeg process 589.
+[2021-09-14 14:10:55,041] INFO [discord.player.cleanup:170] ffmpeg process 589 successfully terminated with return code of 0.
+[2021-09-14 14:15:06,428] INFO [discord.player.cleanup:158] Preparing to terminate ffmpeg process 618.
+[2021-09-14 14:15:06,429] INFO [discord.player.cleanup:170] ffmpeg process 618 successfully terminated with return code of 0.
+[2021-09-14 14:15:06,432] INFO [discord.voice_client.voice_disconnect:304] The voice handshake is being terminated for Channel ID 851017211903868931 (Guild ID 851017211422048257)
+[2021-09-14 14:15:06,433] INFO [discord.voice_client.poll_voice_ws:422] Disconnecting from voice normally, close code 1000.
+[2021-09-14 14:18:34,390] INFO [discord.voice_client.connect:329] Connecting to voice...
+[2021-09-14 14:18:34,390] INFO [discord.voice_client.prepare_handshake:311] Starting voice handshake... (connection attempt 1)
+[2021-09-14 14:18:34,668] INFO [discord.voice_client.finish_handshake:315] Voice handshake complete. Endpoint found singapore2471.discord.media
+[2021-09-14 14:18:36,082] INFO [discord.gateway.initial_connection:862] selected the voice protocol for use (xsalsa20_poly1305_lite)
+[2021-09-14 14:18:36,321] INFO [discord.gateway.load_secret_key:880] received secret key for voice connection
+[2021-09-14 14:18:37,304] INFO [root.play:268] Now playing 'Feeling Proud Indian Army | Sumit Goswami | Parmish Verma | New Haryanvi Songs Haryanavi 2019'
+[2021-09-14 14:22:47,629] INFO [discord.player.cleanup:158] Preparing to terminate ffmpeg process 676.
+[2021-09-14 14:22:47,630] INFO [discord.player.cleanup:170] ffmpeg process 676 successfully terminated with return code of 0.
+[2021-09-14 14:22:47,632] INFO [discord.voice_client.voice_disconnect:304] The voice handshake is being terminated for Channel ID 838803234390802517 (Guild ID 838803234390802513)
+[2021-09-14 14:22:47,633] INFO [discord.voice_client.poll_voice_ws:422] Disconnecting from voice normally, close code 1000.
+[2021-09-14 14:24:44,296] INFO [discord.voice_client.connect:329] Connecting to voice...
+[2021-09-14 14:24:44,296] INFO [discord.voice_client.prepare_handshake:311] Starting voice handshake... (connection attempt 1)
+[2021-09-14 14:24:44,581] INFO [discord.voice_client.finish_handshake:315] Voice handshake complete. Endpoint found singapore2471.discord.media
+[2021-09-14 14:24:46,030] INFO [discord.gateway.initial_connection:862] selected the voice protocol for use (xsalsa20_poly1305_lite)
+[2021-09-14 14:24:46,270] INFO [discord.gateway.load_secret_key:880] received secret key for voice connection
+[2021-09-14 14:24:47,340] INFO [root.play:268] Now playing 'Nigga Cat'
+[2021-09-14 14:25:51,208] INFO [discord.player.cleanup:158] Preparing to terminate ffmpeg process 691.
+[2021-09-14 14:25:51,208] INFO [discord.player.cleanup:170] ffmpeg process 691 successfully terminated with return code of 0.
+[2021-09-14 14:25:51,213] INFO [discord.voice_client.voice_disconnect:304] The voice handshake is being terminated for Channel ID 838803234390802517 (Guild ID 838803234390802513)
+[2021-09-14 14:25:51,220] INFO [discord.voice_client.poll_voice_ws:422] Disconnecting from voice normally, close code 1000.
+[2021-09-14 14:27:06,601] INFO [discord.voice_client.connect:329] Connecting to voice...
+[2021-09-14 14:27:06,605] INFO [discord.voice_client.prepare_handshake:311] Starting voice handshake... (connection attempt 1)
+[2021-09-14 14:27:06,887] INFO [discord.voice_client.finish_handshake:315] Voice handshake complete. Endpoint found singapore2471.discord.media
+[2021-09-14 14:27:08,281] INFO [discord.gateway.initial_connection:862] selected the voice protocol for use (xsalsa20_poly1305_lite)
+[2021-09-14 14:27:08,524] INFO [discord.gateway.load_secret_key:880] received secret key for voice connection
+[2021-09-14 14:27:09,479] INFO [root.play:268] Now playing 'We Use AI to Write the Best HAI Video Ever (HAI #200)'
+[2021-09-14 14:27:58,523] WARNING [root.on_command_error:31] Ignoring exception in command play:
+[2021-09-14 14:27:58,527] WARNING [root.on_command_error:32] 
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/core.py", line 85, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/home/runner/py-music-bot/musicbot/cogs/music.py", line 259, in play
+    video = Video(url, ctx.author)
+  File "/home/runner/py-music-bot/musicbot/video.py", line 18, in __init__
+    video = self._get_info(url_or_search)
+  File "/home/runner/py-music-bot/musicbot/video.py", line 34, in _get_info
+    info["entries"][0]["url"])  # get info for first video
+IndexError: list index out of range
+
+[2021-09-14 14:28:23,532] INFO [discord.voice_client.connect:329] Connecting to voice...
+[2021-09-14 14:28:23,533] INFO [discord.voice_client.prepare_handshake:311] Starting voice handshake... (connection attempt 1)
+[2021-09-14 14:28:23,798] INFO [discord.voice_client.finish_handshake:315] Voice handshake complete. Endpoint found india10010.discord.media
+[2021-09-14 14:28:25,212] INFO [discord.gateway.initial_connection:862] selected the voice protocol for use (xsalsa20_poly1305_lite)
+[2021-09-14 14:28:25,431] INFO [discord.gateway.load_secret_key:880] received secret key for voice connection
+[2021-09-14 14:28:26,000] INFO [discord.voice_client.voice_disconnect:304] The voice handshake is being terminated for Channel ID 835846501062017039 (Guild ID 835846500147920957)
+[2021-09-14 14:28:26,002] INFO [discord.voice_client.poll_voice_ws:422] Disconnecting from voice normally, close code 1000.
+[2021-09-14 14:28:26,007] INFO [discord.player.cleanup:158] Preparing to terminate ffmpeg process 713.
+[2021-09-14 14:28:26,007] INFO [discord.player.cleanup:166] ffmpeg process 713 has not terminated. Waiting to terminate...
+[2021-09-14 14:28:26,041] INFO [discord.player.cleanup:168] ffmpeg process 713 should have terminated with a return code of -9.
+[2021-09-14 14:28:26,663] INFO [root.play:268] Now playing 'BLACKPINK - '마지막처럼 (AS IF IT'S YOUR LAST)' M/V'
+[2021-09-14 14:29:13,235] INFO [discord.client.run:718] Cleaning up tasks.
+[2021-09-14 14:29:13,235] INFO [discord.client._cancel_tasks:71] Cleaning up after 3 tasks.
+[2021-09-14 14:29:13,237] INFO [discord.voice_client.voice_disconnect:304] The voice handshake is being terminated for Channel ID 838803234390802517 (Guild ID 838803234390802513)
+[2021-09-14 14:29:13,243] INFO [discord.player.cleanup:158] Preparing to terminate ffmpeg process 706.
+[2021-09-14 14:29:13,244] INFO [discord.player.cleanup:166] ffmpeg process 706 has not terminated. Waiting to terminate...
+[2021-09-14 14:29:13,244] INFO [discord.client._cancel_tasks:76] All tasks finished cancelling.
+[2021-09-14 14:29:13,245] INFO [discord.client._cleanup_loop:94] Closing the event loop.
+[2021-09-14 14:30:45,613] INFO [discord.client.login:510] logging in using static token
+[2021-09-14 14:30:45,881] INFO [discord.gateway.identify:403] Shard ID None has sent the IDENTIFY payload.
+[2021-09-14 14:30:45,968] INFO [discord.gateway.received_message:494] Shard ID None has connected to Gateway: ["gateway-prd-main-wrl5",{"micros":49058,"calls":["discord-sessions-blue-prd-2-110",{"micros":47946,"calls":["start_session",{"micros":33122,"calls":["api-prd-main-888s",{"micros":28563,"calls":["get_user",{"micros":2834},"add_authorized_ip",{"micros":1613},"get_guilds",{"micros":3905},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: 3161a5b5d3b4c728c7d20f92e2c3a67c).
+[2021-09-14 14:30:48,024] INFO [root.on_ready:15] Logged in as anu malik
+[2021-09-14 14:31:27,397] INFO [discord.voice_client.connect:329] Connecting to voice...
+[2021-09-14 14:31:27,397] INFO [discord.voice_client.prepare_handshake:311] Starting voice handshake... (connection attempt 1)
+[2021-09-14 14:31:27,683] INFO [discord.voice_client.finish_handshake:315] Voice handshake complete. Endpoint found india10012.discord.media
+[2021-09-14 14:31:29,262] INFO [discord.gateway.initial_connection:862] selected the voice protocol for use (xsalsa20_poly1305_lite)
+[2021-09-14 14:31:29,519] INFO [discord.gateway.load_secret_key:880] received secret key for voice connection
+[2021-09-14 14:31:30,651] INFO [root.play:268] Now playing 'GreenGoldKids - Chhota Bheem Title Song'
+[2021-09-14 14:32:53,606] INFO [discord.player.cleanup:158] Preparing to terminate ffmpeg process 748.
+[2021-09-14 14:32:53,607] INFO [discord.player.cleanup:170] ffmpeg process 748 successfully terminated with return code of 0.
+[2021-09-14 14:32:53,609] INFO [discord.voice_client.voice_disconnect:304] The voice handshake is being terminated for Channel ID 838803234390802517 (Guild ID 838803234390802513)
+[2021-09-14 14:32:53,610] INFO [discord.voice_client.poll_voice_ws:422] Disconnecting from voice normally, close code 1000.
+[2021-09-14 14:36:36,602] INFO [discord.client.run:718] Cleaning up tasks.
+[2021-09-14 14:36:36,603] INFO [discord.client._cancel_tasks:71] Cleaning up after 1 tasks.
+[2021-09-14 14:36:36,604] INFO [discord.client._cancel_tasks:76] All tasks finished cancelling.
+[2021-09-14 14:36:36,604] INFO [discord.client._cleanup_loop:94] Closing the event loop.
+[2021-09-14 14:51:00,187] INFO [discord.client.login:510] logging in using static token
+[2021-09-14 14:51:00,429] INFO [discord.gateway.identify:403] Shard ID None has sent the IDENTIFY payload.
+[2021-09-14 14:51:00,590] INFO [discord.gateway.received_message:494] Shard ID None has connected to Gateway: ["gateway-prd-main-z7w9",{"micros":121594,"calls":["discord-sessions-blue-prd-2-59",{"micros":119397,"calls":["start_session",{"micros":106425,"calls":["api-prd-main-bb2p",{"micros":103198,"calls":["get_user",{"micros":4365},"add_authorized_ip",{"micros":6034},"get_guilds",{"micros":23240},"coros_wait",{"micros":0}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: 4b0abeb5d27e606c467d8e21b351218c).
+[2021-09-14 14:51:02,622] INFO [root.on_ready:15] Logged in as anu malik
+[2021-09-14 14:51:17,093] INFO [discord.voice_client.connect:329] Connecting to voice...
+[2021-09-14 14:51:17,093] INFO [discord.voice_client.prepare_handshake:311] Starting voice handshake... (connection attempt 1)
+[2021-09-14 14:51:17,359] INFO [discord.voice_client.finish_handshake:315] Voice handshake complete. Endpoint found india10007.discord.media
+[2021-09-14 14:51:18,778] INFO [discord.gateway.initial_connection:862] selected the voice protocol for use (xsalsa20_poly1305_lite)
+[2021-09-14 14:51:19,002] INFO [discord.gateway.load_secret_key:880] received secret key for voice connection
+[2021-09-14 14:51:20,019] INFO [root.play:268] Now playing 'Nigga Cat'
+[2021-09-14 14:51:37,589] INFO [discord.client.run:718] Cleaning up tasks.
+[2021-09-14 14:51:37,590] INFO [discord.client._cancel_tasks:71] Cleaning up after 3 tasks.
+[2021-09-14 14:51:37,592] INFO [discord.voice_client.voice_disconnect:304] The voice handshake is being terminated for Channel ID 838803234390802517 (Guild ID 838803234390802513)
+[2021-09-14 14:51:37,597] INFO [discord.client._cancel_tasks:76] All tasks finished cancelling.
+[2021-09-14 14:51:37,600] INFO [discord.client._cleanup_loop:94] Closing the event loop.
+[2021-09-14 14:51:37,601] INFO [discord.player.cleanup:158] Preparing to terminate ffmpeg process 107.
+[2021-09-14 14:51:37,620] INFO [discord.player.cleanup:166] ffmpeg process 107 has not terminated. Waiting to terminate...
+[2021-09-14 14:51:43,887] INFO [discord.client.login:510] logging in using static token
+[2021-09-14 14:51:44,104] INFO [discord.gateway.identify:403] Shard ID None has sent the IDENTIFY payload.
+[2021-09-14 14:51:44,249] INFO [discord.gateway.received_message:494] Shard ID None has connected to Gateway: ["gateway-prd-main-tdtk",{"micros":104986,"calls":["discord-sessions-blue-prd-2-101",{"micros":104215,"calls":["start_session",{"micros":85552,"calls":["api-prd-main-q8vl",{"micros":80228,"calls":["get_user",{"micros":3649},"add_authorized_ip",{"micros":4588},"get_guilds",{"micros":9808},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":3,"calls":[]},"presence_connect",{"micros":1629,"calls":[]}]}]}] (Session ID: d7827135129058fbad64fee9b148aebd).
+[2021-09-14 14:51:46,308] INFO [root.on_ready:15] Logged in as anu malik
+[2021-09-14 14:51:54,786] INFO [discord.voice_client.connect:329] Connecting to voice...
+[2021-09-14 14:51:54,787] INFO [discord.voice_client.prepare_handshake:311] Starting voice handshake... (connection attempt 1)
+[2021-09-14 14:51:55,068] INFO [discord.voice_client.finish_handshake:315] Voice handshake complete. Endpoint found india10007.discord.media
+[2021-09-14 14:51:56,518] INFO [discord.gateway.initial_connection:862] selected the voice protocol for use (xsalsa20_poly1305_lite)
+[2021-09-14 14:51:56,751] INFO [discord.gateway.load_secret_key:880] received secret key for voice connection
+[2021-09-14 14:51:57,778] INFO [root.play:267] Now playing 'Nigga Cat'
+[2021-09-14 14:52:07,069] INFO [discord.voice_client.voice_disconnect:304] The voice handshake is being terminated for Channel ID 838803234390802517 (Guild ID 838803234390802513)
+[2021-09-14 14:52:07,072] INFO [discord.voice_client.poll_voice_ws:422] Disconnecting from voice normally, close code 1000.
+[2021-09-14 14:52:07,082] INFO [discord.player.cleanup:158] Preparing to terminate ffmpeg process 136.
+[2021-09-14 14:52:07,083] INFO [discord.player.cleanup:166] ffmpeg process 136 has not terminated. Waiting to terminate...
+[2021-09-14 14:52:07,090] INFO [discord.player.cleanup:168] ffmpeg process 136 should have terminated with a return code of -9.
+[2021-09-14 14:52:54,855] INFO [discord.client.run:718] Cleaning up tasks.
+[2021-09-14 14:52:54,855] INFO [discord.client._cancel_tasks:71] Cleaning up after 1 tasks.
+[2021-09-14 14:52:54,856] INFO [discord.client._cancel_tasks:76] All tasks finished cancelling.
+[2021-09-14 14:52:54,857] INFO [discord.client._cleanup_loop:94] Closing the event loop.
+[2021-09-14 14:53:21,847] INFO [discord.client.login:510] logging in using static token
+[2021-09-14 14:53:22,088] INFO [discord.gateway.identify:403] Shard ID None has sent the IDENTIFY payload.
+[2021-09-14 14:53:22,195] INFO [discord.gateway.received_message:494] Shard ID None has connected to Gateway: ["gateway-prd-main-6zdt",{"micros":65436,"calls":["discord-sessions-blue-prd-2-141",{"micros":64477,"calls":["start_session",{"micros":35771,"calls":["api-prd-main-43gs",{"micros":32160,"calls":["get_user",{"micros":2093},"add_authorized_ip",{"micros":2051},"get_guilds",{"micros":4282},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":2,"calls":[]}]}]}] (Session ID: 5ba2acee3dd2af2717e67d5c3fb99de9).
+[2021-09-14 14:53:24,335] INFO [root.on_ready:15] Logged in as anu malik
+[2021-09-14 14:53:35,604] INFO [discord.voice_client.connect:329] Connecting to voice...
+[2021-09-14 14:53:35,605] INFO [discord.voice_client.prepare_handshake:311] Starting voice handshake... (connection attempt 1)
+[2021-09-14 14:53:36,550] INFO [discord.voice_client.finish_handshake:315] Voice handshake complete. Endpoint found india10007.discord.media
+[2021-09-14 14:53:38,087] INFO [discord.gateway.initial_connection:862] selected the voice protocol for use (xsalsa20_poly1305_lite)
+[2021-09-14 14:53:38,340] INFO [discord.gateway.load_secret_key:880] received secret key for voice connection
+[2021-09-14 14:53:39,577] INFO [root.play:267] Now playing 'One Nigga Dead - Sicx & Brotha Lynch Hung [ Nigga Deep ] --((HQ))--'
+[2021-09-14 14:53:52,395] INFO [discord.voice_client.voice_disconnect:304] The voice handshake is being terminated for Channel ID 838803234390802517 (Guild ID 838803234390802513)
+[2021-09-14 14:53:52,396] INFO [discord.voice_client.poll_voice_ws:422] Disconnecting from voice normally, close code 1000.
+[2021-09-14 14:53:52,411] INFO [discord.player.cleanup:158] Preparing to terminate ffmpeg process 170.
+[2021-09-14 14:53:52,412] INFO [discord.player.cleanup:166] ffmpeg process 170 has not terminated. Waiting to terminate...
+[2021-09-14 14:53:52,416] INFO [discord.player.cleanup:168] ffmpeg process 170 should have terminated with a return code of -9.
+[2021-09-14 14:54:08,321] INFO [discord.voice_client.connect:329] Connecting to voice...
+[2021-09-14 14:54:08,321] INFO [discord.voice_client.prepare_handshake:311] Starting voice handshake... (connection attempt 1)
+[2021-09-14 14:54:08,588] INFO [discord.voice_client.finish_handshake:315] Voice handshake complete. Endpoint found india10007.discord.media
+[2021-09-14 14:54:10,037] INFO [discord.gateway.initial_connection:862] selected the voice protocol for use (xsalsa20_poly1305_lite)
+[2021-09-14 14:54:10,286] INFO [discord.gateway.load_secret_key:880] received secret key for voice connection
+[2021-09-14 14:54:11,303] INFO [root.play:267] Now playing 'Duniya ka sabse bada khargosh'
+[2021-09-14 14:54:38,554] INFO [discord.voice_client.voice_disconnect:304] The voice handshake is being terminated for Channel ID 838803234390802517 (Guild ID 838803234390802513)
+[2021-09-14 14:54:38,555] INFO [discord.voice_client.poll_voice_ws:422] Disconnecting from voice normally, close code 1000.
+[2021-09-14 14:54:38,563] INFO [discord.player.cleanup:158] Preparing to terminate ffmpeg process 178.
+[2021-09-14 14:54:38,563] INFO [discord.player.cleanup:166] ffmpeg process 178 has not terminated. Waiting to terminate...
+[2021-09-14 14:54:38,590] INFO [discord.player.cleanup:168] ffmpeg process 178 should have terminated with a return code of -9.
+[2021-09-14 14:56:48,919] INFO [discord.client.run:718] Cleaning up tasks.
+[2021-09-14 14:56:48,920] INFO [discord.client._cancel_tasks:71] Cleaning up after 1 tasks.
+[2021-09-14 14:56:48,921] INFO [discord.client._cancel_tasks:76] All tasks finished cancelling.
+[2021-09-14 14:56:48,921] INFO [discord.client._cleanup_loop:94] Closing the event loop.
+[2021-09-14 14:57:11,672] INFO [discord.client.login:510] logging in using static token
+[2021-09-14 14:57:11,974] INFO [discord.gateway.identify:403] Shard ID None has sent the IDENTIFY payload.
+[2021-09-14 14:57:12,089] INFO [discord.gateway.received_message:494] Shard ID None has connected to Gateway: ["gateway-prd-main-gj35",{"micros":44213,"calls":["discord-sessions-blue-prd-2-28",{"micros":43411,"calls":["start_session",{"micros":29616,"calls":["api-prd-main-p3mx",{"micros":26438,"calls":["get_user",{"micros":2570},"add_authorized_ip",{"micros":1987},"get_guilds",{"micros":4482},"coros_wait",{"micros":0}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":7803,"calls":[]}]}]}] (Session ID: 4a012ef02fc8c38d33972c9b7167cf97).
+[2021-09-14 14:57:14,270] INFO [root.on_ready:15] Logged in as anu malik
+[2021-09-14 14:57:47,205] INFO [discord.voice_client.connect:329] Connecting to voice...
+[2021-09-14 14:57:47,205] INFO [discord.voice_client.prepare_handshake:311] Starting voice handshake... (connection attempt 1)
+[2021-09-14 14:57:47,492] INFO [discord.voice_client.finish_handshake:315] Voice handshake complete. Endpoint found india10007.discord.media
+[2021-09-14 14:57:48,848] INFO [discord.gateway.initial_connection:862] selected the voice protocol for use (xsalsa20_poly1305_lite)
+[2021-09-14 14:57:49,061] INFO [discord.gateway.load_secret_key:880] received secret key for voice connection
+[2021-09-14 14:57:50,080] INFO [root.play:267] Now playing 'Among Us Trap Remix Bass Boosted Leonz'
+[2021-09-14 14:59:04,103] INFO [discord.player.cleanup:158] Preparing to terminate ffmpeg process 271.
+[2021-09-14 14:59:04,104] INFO [discord.player.cleanup:170] ffmpeg process 271 successfully terminated with return code of 0.
+[2021-09-14 14:59:04,106] INFO [discord.voice_client.voice_disconnect:304] The voice handshake is being terminated for Channel ID 838803234390802517 (Guild ID 838803234390802513)
+[2021-09-14 14:59:04,107] INFO [discord.voice_client.poll_voice_ws:422] Disconnecting from voice normally, close code 1000.
+[2021-09-14 14:59:44,811] INFO [discord.voice_client.connect:329] Connecting to voice...
+[2021-09-14 14:59:44,812] INFO [discord.voice_client.prepare_handshake:311] Starting voice handshake... (connection attempt 1)
+[2021-09-14 14:59:45,083] INFO [discord.voice_client.finish_handshake:315] Voice handshake complete. Endpoint found india10007.discord.media
+[2021-09-14 14:59:46,596] INFO [discord.gateway.initial_connection:862] selected the voice protocol for use (xsalsa20_poly1305_lite)
+[2021-09-14 14:59:46,842] INFO [discord.gateway.load_secret_key:880] received secret key for voice connection
+[2021-09-14 14:59:47,912] INFO [root.play:267] Now playing 'Clair de Lune (Extended)'
+[2021-09-14 15:03:20,756] INFO [discord.client.run:718] Cleaning up tasks.
+[2021-09-14 15:03:20,756] INFO [discord.client._cancel_tasks:71] Cleaning up after 3 tasks.
+[2021-09-14 15:03:20,758] INFO [discord.voice_client.voice_disconnect:304] The voice handshake is being terminated for Channel ID 838803234390802517 (Guild ID 838803234390802513)
+[2021-09-14 15:03:20,759] INFO [discord.client._cancel_tasks:76] All tasks finished cancelling.
+[2021-09-14 15:03:20,760] INFO [discord.client._cleanup_loop:94] Closing the event loop.
+[2021-09-14 15:04:07,290] INFO [discord.client.login:510] logging in using static token
+[2021-09-14 15:04:07,543] INFO [discord.gateway.identify:403] Shard ID None has sent the IDENTIFY payload.
+[2021-09-14 15:04:07,778] INFO [discord.gateway.received_message:494] Shard ID None has connected to Gateway: ["gateway-prd-main-28ns",{"micros":190690,"calls":["discord-sessions-blue-prd-2-59",{"micros":189649,"calls":["start_session",{"micros":145206,"calls":["api-prd-main-1fm8",{"micros":137630,"calls":["get_user",{"micros":9842},"add_authorized_ip",{"micros":4079},"get_guilds",{"micros":101470},"coros_wait",{"micros":0}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":8436,"calls":[]}]}]}] (Session ID: 6255b755cbc5820247b1bad2f375c283).
+[2021-09-14 15:04:09,827] INFO [root.on_ready:15] Logged in as anu malik
+[2021-09-14 15:05:04,214] INFO [discord.voice_client.connect:329] Connecting to voice...
+[2021-09-14 15:05:04,215] INFO [discord.voice_client.prepare_handshake:311] Starting voice handshake... (connection attempt 1)
+[2021-09-14 15:05:04,480] INFO [discord.voice_client.finish_handshake:315] Voice handshake complete. Endpoint found india10007.discord.media
+[2021-09-14 15:05:05,886] INFO [discord.gateway.initial_connection:862] selected the voice protocol for use (xsalsa20_poly1305_lite)
+[2021-09-14 15:05:06,110] INFO [discord.gateway.load_secret_key:880] received secret key for voice connection
+[2021-09-14 15:05:07,460] INFO [root.play:267] Now playing 'Namaste Sada Vatsale Matribhume | RSS | Akshay Pandya | Sushant Trivedi'
+[2021-09-14 15:06:07,300] INFO [discord.client.run:718] Cleaning up tasks.
+[2021-09-14 15:06:07,301] INFO [discord.client._cancel_tasks:71] Cleaning up after 3 tasks.
+[2021-09-14 15:06:07,304] INFO [discord.voice_client.voice_disconnect:304] The voice handshake is being terminated for Channel ID 838803234390802517 (Guild ID 838803234390802513)
+[2021-09-14 15:06:07,306] INFO [discord.client._cancel_tasks:76] All tasks finished cancelling.
+[2021-09-14 15:06:07,307] INFO [discord.player.cleanup:158] Preparing to terminate ffmpeg process 430.
+[2021-09-14 15:06:07,307] INFO [discord.client._cleanup_loop:94] Closing the event loop.
+[2021-09-14 15:06:07,307] INFO [discord.player.cleanup:166] ffmpeg process 430 has not terminated. Waiting to terminate...
+[2021-09-14 15:06:10,195] INFO [discord.client.login:510] logging in using static token
+[2021-09-14 15:06:10,438] INFO [discord.gateway.identify:403] Shard ID None has sent the IDENTIFY payload.
+[2021-09-14 15:06:10,536] INFO [discord.gateway.received_message:494] Shard ID None has connected to Gateway: ["gateway-prd-main-djhr",{"micros":57274,"calls":["discord-sessions-blue-prd-2-159",{"micros":49741,"calls":["start_session",{"micros":32765,"calls":["api-prd-main-6h5s",{"micros":29327,"calls":["get_user",{"micros":2732},"add_authorized_ip",{"micros":2832},"get_guilds",{"micros":3723},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":3,"calls":[]},"presence_connect",{"micros":0,"calls":[]}]}]}] (Session ID: 343391b695b417a84628a7fae0bbcb4c).
+[2021-09-14 15:06:12,613] INFO [root.on_ready:15] Logged in as anu malik
+[2021-09-14 15:07:37,727] INFO [discord.client.run:718] Cleaning up tasks.
+[2021-09-14 15:07:37,727] INFO [discord.client._cancel_tasks:71] Cleaning up after 1 tasks.
+[2021-09-14 15:07:37,729] INFO [discord.client._cancel_tasks:76] All tasks finished cancelling.
+[2021-09-14 15:07:37,730] INFO [discord.client._cleanup_loop:94] Closing the event loop.
+[2021-09-14 15:09:29,178] INFO [discord.client.login:510] logging in using static token
+[2021-09-14 15:09:29,416] INFO [discord.gateway.identify:403] Shard ID None has sent the IDENTIFY payload.
+[2021-09-14 15:09:29,534] INFO [discord.gateway.received_message:494] Shard ID None has connected to Gateway: ["gateway-prd-main-ds4t",{"micros":71886,"calls":["discord-sessions-blue-prd-2-3",{"micros":70904,"calls":["start_session",{"micros":31122,"calls":["api-prd-main-8pkm",{"micros":27647,"calls":["get_user",{"micros":2663},"add_authorized_ip",{"micros":2079},"get_guilds",{"micros":4418},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":3,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: 401c88f234a8a44063300b69b0e3b00d).
+[2021-09-14 15:09:31,098] INFO [discord.client.run:718] Cleaning up tasks.
+[2021-09-14 15:09:31,098] INFO [discord.client._cancel_tasks:71] Cleaning up after 3 tasks.
+[2021-09-14 15:09:31,099] INFO [discord.client._cancel_tasks:76] All tasks finished cancelling.
+[2021-09-14 15:09:31,100] INFO [discord.client._cleanup_loop:94] Closing the event loop.
+[2021-09-14 15:09:47,386] INFO [discord.client.login:510] logging in using static token
+[2021-09-14 15:09:47,589] INFO [discord.gateway.identify:403] Shard ID None has sent the IDENTIFY payload.
+[2021-09-14 15:09:47,721] INFO [discord.gateway.received_message:494] Shard ID None has connected to Gateway: ["gateway-prd-main-k8rx",{"micros":84658,"calls":["discord-sessions-blue-prd-2-90",{"micros":76063,"calls":["start_session",{"micros":47290,"calls":["api-prd-main-h5vk",{"micros":44213,"calls":["get_user",{"micros":6584},"add_authorized_ip",{"micros":3682},"get_guilds",{"micros":3581},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":0,"calls":[]}]}]}] (Session ID: 4c1a8c6141a9c56a0b3507322accb92c).
+[2021-09-14 15:09:49,751] INFO [root.on_ready:15] Logged in as anu malik
+[2021-09-14 15:10:08,183] WARNING [root.on_command_error:31] Ignoring exception in command help:
+[2021-09-14 15:10:08,186] WARNING [root.on_command_error:32] 
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/core.py", line 85, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 848, in command_callback
+    return await self.send_bot_help(mapping)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 1038, in send_bot_help
+    filtered = await self.filter_commands(bot.commands, sort=True, key=get_category)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 589, in filter_commands
+    valid = await predicate(cmd)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 583, in predicate
+    return await cmd.can_run(self.context)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/core.py", line 1087, in can_run
+    return await discord.utils.async_all(predicate(ctx) for predicate in predicates)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/utils.py", line 350, in async_all
+    elem = await elem
+  File "/home/runner/py-music-bot/musicbot/cogs/music.py", line 45, in is_audio_requester
+    if permissions.administrator or state.is_requester(ctx.author):
+  File "/home/runner/py-music-bot/musicbot/cogs/music.py", line 331, in is_requester
+    return self.now_playing.requested_by == user
+AttributeError: 'NoneType' object has no attribute 'requested_by'
+
+[2021-09-14 15:10:17,452] WARNING [root.on_command_error:31] Ignoring exception in command help:
+[2021-09-14 15:10:17,453] WARNING [root.on_command_error:32] 
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/core.py", line 85, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 848, in command_callback
+    return await self.send_bot_help(mapping)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 1038, in send_bot_help
+    filtered = await self.filter_commands(bot.commands, sort=True, key=get_category)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 589, in filter_commands
+    valid = await predicate(cmd)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 583, in predicate
+    return await cmd.can_run(self.context)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/core.py", line 1087, in can_run
+    return await discord.utils.async_all(predicate(ctx) for predicate in predicates)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/utils.py", line 350, in async_all
+    elem = await elem
+  File "/home/runner/py-music-bot/musicbot/cogs/music.py", line 45, in is_audio_requester
+    if permissions.administrator or state.is_requester(ctx.author):
+  File "/home/runner/py-music-bot/musicbot/cogs/music.py", line 331, in is_requester
+    return self.now_playing.requested_by == user
+AttributeError: 'NoneType' object has no attribute 'requested_by'
+
+[2021-09-14 15:10:26,375] WARNING [root.on_command_error:31] Ignoring exception in command help:
+[2021-09-14 15:10:26,375] WARNING [root.on_command_error:32] 
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/core.py", line 85, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 848, in command_callback
+    return await self.send_bot_help(mapping)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 1038, in send_bot_help
+    filtered = await self.filter_commands(bot.commands, sort=True, key=get_category)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 589, in filter_commands
+    valid = await predicate(cmd)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 583, in predicate
+    return await cmd.can_run(self.context)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/core.py", line 1087, in can_run
+    return await discord.utils.async_all(predicate(ctx) for predicate in predicates)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/utils.py", line 350, in async_all
+    elem = await elem
+  File "/home/runner/py-music-bot/musicbot/cogs/music.py", line 45, in is_audio_requester
+    if permissions.administrator or state.is_requester(ctx.author):
+  File "/home/runner/py-music-bot/musicbot/cogs/music.py", line 331, in is_requester
+    return self.now_playing.requested_by == user
+AttributeError: 'NoneType' object has no attribute 'requested_by'
+
+[2021-09-14 15:11:48,874] INFO [discord.client.run:718] Cleaning up tasks.
+[2021-09-14 15:11:48,875] INFO [discord.client._cancel_tasks:71] Cleaning up after 1 tasks.
+[2021-09-14 15:11:48,876] INFO [discord.client._cancel_tasks:76] All tasks finished cancelling.
+[2021-09-14 15:11:48,876] INFO [discord.client._cleanup_loop:94] Closing the event loop.
+[2021-09-14 15:11:52,498] INFO [discord.client.login:510] logging in using static token
+[2021-09-14 15:11:52,734] INFO [discord.gateway.identify:403] Shard ID None has sent the IDENTIFY payload.
+[2021-09-14 15:11:52,873] INFO [discord.gateway.received_message:494] Shard ID None has connected to Gateway: ["gateway-prd-main-gljs",{"micros":90407,"calls":["discord-sessions-blue-prd-2-145",{"micros":89699,"calls":["start_session",{"micros":69075,"calls":["api-prd-main-qff4",{"micros":63531,"calls":["get_user",{"micros":3140},"add_authorized_ip",{"micros":5476},"get_guilds",{"micros":8161},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":3,"calls":[]},"presence_connect",{"micros":2,"calls":[]}]}]}] (Session ID: 49770243d628e50667ff4785dfe8e3ab).
+[2021-09-14 15:11:54,928] INFO [root.on_ready:15] Logged in as anu malik
+[2021-09-14 15:11:56,937] WARNING [root.on_command_error:31] Ignoring exception in command help:
+[2021-09-14 15:11:56,939] WARNING [root.on_command_error:32] 
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/core.py", line 85, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 848, in command_callback
+    return await self.send_bot_help(mapping)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 1038, in send_bot_help
+    filtered = await self.filter_commands(bot.commands, sort=True, key=get_category)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 589, in filter_commands
+    valid = await predicate(cmd)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 583, in predicate
+    return await cmd.can_run(self.context)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/core.py", line 1087, in can_run
+    return await discord.utils.async_all(predicate(ctx) for predicate in predicates)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/utils.py", line 350, in async_all
+    elem = await elem
+  File "/home/runner/py-music-bot/musicbot/cogs/music.py", line 45, in is_audio_requester
+    if permissions.administrator or state.is_requester(ctx.author):
+  File "/home/runner/py-music-bot/musicbot/cogs/music.py", line 331, in is_requester
+    return self.now_playing.requested_by == user
+AttributeError: 'NoneType' object has no attribute 'requested_by'
+
+[2021-09-14 15:12:52,388] WARNING [root.on_command_error:31] Ignoring exception in command help:
+[2021-09-14 15:12:52,389] WARNING [root.on_command_error:32] 
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/core.py", line 85, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 848, in command_callback
+    return await self.send_bot_help(mapping)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 1038, in send_bot_help
+    filtered = await self.filter_commands(bot.commands, sort=True, key=get_category)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 589, in filter_commands
+    valid = await predicate(cmd)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 583, in predicate
+    return await cmd.can_run(self.context)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/core.py", line 1087, in can_run
+    return await discord.utils.async_all(predicate(ctx) for predicate in predicates)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/utils.py", line 350, in async_all
+    elem = await elem
+  File "/home/runner/py-music-bot/musicbot/cogs/music.py", line 45, in is_audio_requester
+    if permissions.administrator or state.is_requester(ctx.author):
+  File "/home/runner/py-music-bot/musicbot/cogs/music.py", line 331, in is_requester
+    return self.now_playing.requested_by == user
+AttributeError: 'NoneType' object has no attribute 'requested_by'
+
+[2021-09-14 15:13:28,356] INFO [discord.voice_client.connect:329] Connecting to voice...
+[2021-09-14 15:13:28,356] INFO [discord.voice_client.prepare_handshake:311] Starting voice handshake... (connection attempt 1)
+[2021-09-14 15:13:28,627] INFO [discord.voice_client.finish_handshake:315] Voice handshake complete. Endpoint found india10001.discord.media
+[2021-09-14 15:13:30,107] INFO [discord.gateway.initial_connection:862] selected the voice protocol for use (xsalsa20_poly1305_lite)
+[2021-09-14 15:13:30,341] INFO [discord.gateway.load_secret_key:880] received secret key for voice connection
+[2021-09-14 15:13:31,455] INFO [root.play:267] Now playing 'Sajid calls Anu Malik a theif'
+[2021-09-14 15:13:43,082] INFO [discord.player.cleanup:158] Preparing to terminate ffmpeg process 616.
+[2021-09-14 15:13:43,082] INFO [discord.player.cleanup:166] ffmpeg process 616 has not terminated. Waiting to terminate...
+[2021-09-14 15:13:43,083] INFO [discord.voice_client.voice_disconnect:304] The voice handshake is being terminated for Channel ID 838803234390802517 (Guild ID 838803234390802513)
+[2021-09-14 15:13:43,090] INFO [discord.voice_client.poll_voice_ws:422] Disconnecting from voice normally, close code 1000.
+[2021-09-14 15:13:43,093] INFO [discord.player.cleanup:168] ffmpeg process 616 should have terminated with a return code of -9.
+[2021-09-14 15:14:10,466] WARNING [root.on_command_error:31] Ignoring exception in command help:
+[2021-09-14 15:14:10,468] WARNING [root.on_command_error:32] 
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/core.py", line 85, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 848, in command_callback
+    return await self.send_bot_help(mapping)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 1038, in send_bot_help
+    filtered = await self.filter_commands(bot.commands, sort=True, key=get_category)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 589, in filter_commands
+    valid = await predicate(cmd)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 583, in predicate
+    return await cmd.can_run(self.context)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/core.py", line 1087, in can_run
+    return await discord.utils.async_all(predicate(ctx) for predicate in predicates)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/utils.py", line 350, in async_all
+    elem = await elem
+  File "/home/runner/py-music-bot/musicbot/cogs/music.py", line 45, in is_audio_requester
+    if permissions.administrator or state.is_requester(ctx.author):
+  File "/home/runner/py-music-bot/musicbot/cogs/music.py", line 331, in is_requester
+    return self.now_playing.requested_by == user
+AttributeError: 'NoneType' object has no attribute 'requested_by'
+
+[2021-09-14 15:14:44,630] INFO [discord.client.run:718] Cleaning up tasks.
+[2021-09-14 15:14:44,630] INFO [discord.client._cancel_tasks:71] Cleaning up after 1 tasks.
+[2021-09-14 15:14:44,631] INFO [discord.client._cancel_tasks:76] All tasks finished cancelling.
+[2021-09-14 15:14:44,632] INFO [discord.client._cleanup_loop:94] Closing the event loop.
+[2021-09-14 15:14:48,303] INFO [discord.client.login:510] logging in using static token
+[2021-09-14 15:14:48,564] INFO [discord.gateway.identify:403] Shard ID None has sent the IDENTIFY payload.
+[2021-09-14 15:14:48,657] INFO [discord.gateway.received_message:494] Shard ID None has connected to Gateway: ["gateway-prd-main-6mgz",{"micros":47180,"calls":["discord-sessions-blue-prd-2-52",{"micros":46208,"calls":["start_session",{"micros":30394,"calls":["api-prd-main-z90g",{"micros":27280,"calls":["get_user",{"micros":2758},"add_authorized_ip",{"micros":1352},"get_guilds",{"micros":5762},"coros_wait",{"micros":0}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":9214,"calls":[]}]}]}] (Session ID: 0bd6c1a61422a86d9fc11e4bf78b23f8).
+[2021-09-14 15:14:50,700] INFO [root.on_ready:15] Logged in as anu malik
+[2021-09-14 15:14:56,393] WARNING [root.on_command_error:31] Ignoring exception in command help:
+[2021-09-14 15:14:56,396] WARNING [root.on_command_error:32] 
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/core.py", line 85, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 848, in command_callback
+    return await self.send_bot_help(mapping)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 1038, in send_bot_help
+    filtered = await self.filter_commands(bot.commands, sort=True, key=get_category)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 589, in filter_commands
+    valid = await predicate(cmd)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 583, in predicate
+    return await cmd.can_run(self.context)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/core.py", line 1087, in can_run
+    return await discord.utils.async_all(predicate(ctx) for predicate in predicates)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/utils.py", line 350, in async_all
+    elem = await elem
+  File "/home/runner/py-music-bot/musicbot/cogs/music.py", line 45, in is_audio_requester
+    if permissions.administrator or state.is_requester(ctx.author):
+  File "/home/runner/py-music-bot/musicbot/cogs/music.py", line 331, in is_requester
+    return self.now_playing.requested_by == user
+AttributeError: 'NoneType' object has no attribute 'requested_by'
+
+[2021-09-14 15:15:52,784] INFO [discord.client.run:718] Cleaning up tasks.
+[2021-09-14 15:15:52,784] INFO [discord.client._cancel_tasks:71] Cleaning up after 1 tasks.
+[2021-09-14 15:15:52,785] INFO [discord.client._cancel_tasks:76] All tasks finished cancelling.
+[2021-09-14 15:15:52,786] INFO [discord.client._cleanup_loop:94] Closing the event loop.
+[2021-09-14 15:15:56,782] INFO [discord.client.login:510] logging in using static token
+[2021-09-14 15:15:57,025] INFO [discord.gateway.identify:403] Shard ID None has sent the IDENTIFY payload.
+[2021-09-14 15:15:57,159] INFO [discord.gateway.received_message:494] Shard ID None has connected to Gateway: ["gateway-prd-main-f4bs",{"micros":83830,"calls":["discord-sessions-blue-prd-2-152",{"micros":82800,"calls":["start_session",{"micros":43485,"calls":["api-prd-main-x8p7",{"micros":39167,"calls":["get_user",{"micros":4997},"add_authorized_ip",{"micros":2449},"get_guilds",{"micros":6672},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: abd833c0d3636c5bf88b72bb20b05b9f).
+[2021-09-14 15:15:59,216] INFO [root.on_ready:15] Logged in as anu malik
+[2021-09-14 15:16:02,887] WARNING [root.on_command_error:31] Ignoring exception in command help:
+[2021-09-14 15:16:02,890] WARNING [root.on_command_error:32] 
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/core.py", line 85, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 848, in command_callback
+    return await self.send_bot_help(mapping)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 1038, in send_bot_help
+    filtered = await self.filter_commands(bot.commands, sort=True, key=get_category)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 589, in filter_commands
+    valid = await predicate(cmd)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 583, in predicate
+    return await cmd.can_run(self.context)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/core.py", line 1087, in can_run
+    return await discord.utils.async_all(predicate(ctx) for predicate in predicates)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/utils.py", line 350, in async_all
+    elem = await elem
+  File "/home/runner/py-music-bot/musicbot/cogs/music.py", line 45, in is_audio_requester
+    if permissions.administrator or state.is_requester(ctx.author):
+  File "/home/runner/py-music-bot/musicbot/cogs/music.py", line 331, in is_requester
+    return self.now_playing.requested_by == user
+AttributeError: 'NoneType' object has no attribute 'requested_by'
+
+[2021-09-14 15:16:14,346] INFO [discord.client.run:718] Cleaning up tasks.
+[2021-09-14 15:16:14,346] INFO [discord.client._cancel_tasks:71] Cleaning up after 1 tasks.
+[2021-09-14 15:16:14,347] INFO [discord.client._cancel_tasks:76] All tasks finished cancelling.
+[2021-09-14 15:16:14,348] INFO [discord.client._cleanup_loop:94] Closing the event loop.
+[2021-09-14 15:16:21,511] INFO [discord.client.login:510] logging in using static token
+[2021-09-14 15:16:21,764] INFO [discord.gateway.identify:403] Shard ID None has sent the IDENTIFY payload.
+[2021-09-14 15:16:21,874] INFO [discord.gateway.received_message:494] Shard ID None has connected to Gateway: ["gateway-prd-main-vp53",{"micros":67940,"calls":["discord-sessions-blue-prd-2-19",{"micros":66933,"calls":["start_session",{"micros":49663,"calls":["api-prd-main-8rf9",{"micros":43849,"calls":["get_user",{"micros":5454},"add_authorized_ip",{"micros":2055},"get_guilds",{"micros":3052},"coros_wait",{"micros":0}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: bb6a3726242026b930caadcf894bd7b6).
+[2021-09-14 15:16:24,037] INFO [root.on_ready:15] Logged in as anu malik
+[2021-09-14 15:16:28,697] WARNING [root.on_command_error:31] Ignoring exception in command help:
+[2021-09-14 15:16:28,699] WARNING [root.on_command_error:32] 
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/core.py", line 85, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 848, in command_callback
+    return await self.send_bot_help(mapping)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 1038, in send_bot_help
+    filtered = await self.filter_commands(bot.commands, sort=True, key=get_category)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 589, in filter_commands
+    valid = await predicate(cmd)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 583, in predicate
+    return await cmd.can_run(self.context)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/core.py", line 1087, in can_run
+    return await discord.utils.async_all(predicate(ctx) for predicate in predicates)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/utils.py", line 350, in async_all
+    elem = await elem
+  File "/home/runner/py-music-bot/musicbot/cogs/music.py", line 45, in is_audio_requester
+    if permissions.administrator or state.is_requester(ctx.author):
+  File "/home/runner/py-music-bot/musicbot/cogs/music.py", line 331, in is_requester
+    return self.now_playing.requested_by == user
+AttributeError: 'NoneType' object has no attribute 'requested_by'
+
+[2021-09-14 15:18:00,419] WARNING [root.on_command_error:31] Ignoring exception in command help:
+[2021-09-14 15:18:00,420] WARNING [root.on_command_error:32] 
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/core.py", line 85, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 848, in command_callback
+    return await self.send_bot_help(mapping)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 1038, in send_bot_help
+    filtered = await self.filter_commands(bot.commands, sort=True, key=get_category)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 589, in filter_commands
+    valid = await predicate(cmd)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 583, in predicate
+    return await cmd.can_run(self.context)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/core.py", line 1087, in can_run
+    return await discord.utils.async_all(predicate(ctx) for predicate in predicates)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/utils.py", line 350, in async_all
+    elem = await elem
+  File "/home/runner/py-music-bot/musicbot/cogs/music.py", line 45, in is_audio_requester
+    if permissions.administrator or state.is_requester(ctx.author):
+  File "/home/runner/py-music-bot/musicbot/cogs/music.py", line 331, in is_requester
+    return self.now_playing.requested_by == user
+AttributeError: 'NoneType' object has no attribute 'requested_by'
+
+[2021-09-14 15:20:44,647] INFO [discord.client.run:718] Cleaning up tasks.
+[2021-09-14 15:20:44,647] INFO [discord.client._cancel_tasks:71] Cleaning up after 1 tasks.
+[2021-09-14 15:20:44,649] INFO [discord.client._cancel_tasks:76] All tasks finished cancelling.
+[2021-09-14 15:20:44,649] INFO [discord.client._cleanup_loop:94] Closing the event loop.
+[2021-09-14 15:20:48,068] INFO [discord.client.login:510] logging in using static token
+[2021-09-14 15:20:48,293] INFO [discord.gateway.identify:403] Shard ID None has sent the IDENTIFY payload.
+[2021-09-14 15:20:48,452] INFO [discord.gateway.received_message:494] Shard ID None has connected to Gateway: ["gateway-prd-main-8vbh",{"micros":115509,"calls":["discord-sessions-blue-prd-2-127",{"micros":110782,"calls":["start_session",{"micros":88532,"calls":["api-prd-main-hht8",{"micros":85104,"calls":["get_user",{"micros":16067},"add_authorized_ip",{"micros":6084},"get_guilds",{"micros":14283},"coros_wait",{"micros":0}]}]},"guilds_connect",{"micros":3,"calls":[]},"presence_connect",{"micros":11705,"calls":[]}]}]}] (Session ID: f6116697493bef7e611c496ddbe70a2a).
+[2021-09-14 15:20:50,480] INFO [root.on_ready:15] Logged in as anu malik
+[2021-09-14 15:20:55,099] WARNING [root.on_command_error:31] Ignoring exception in command help:
+[2021-09-14 15:20:55,101] WARNING [root.on_command_error:32] 
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/core.py", line 85, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 848, in command_callback
+    return await self.send_bot_help(mapping)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 1038, in send_bot_help
+    filtered = await self.filter_commands(bot.commands, sort=True, key=get_category)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 589, in filter_commands
+    valid = await predicate(cmd)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 583, in predicate
+    return await cmd.can_run(self.context)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/core.py", line 1087, in can_run
+    return await discord.utils.async_all(predicate(ctx) for predicate in predicates)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/utils.py", line 350, in async_all
+    elem = await elem
+  File "/home/runner/py-music-bot/musicbot/cogs/music.py", line 45, in is_audio_requester
+    if permissions.administrator or state.is_requester(ctx.author):
+  File "/home/runner/py-music-bot/musicbot/cogs/music.py", line 331, in is_requester
+    return self.now_playing.requested_by == user
+AttributeError: 'NoneType' object has no attribute 'requested_by'
+
+[2021-09-14 15:20:56,557] WARNING [root.on_command_error:31] Ignoring exception in command help:
+[2021-09-14 15:20:56,558] WARNING [root.on_command_error:32] 
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/core.py", line 85, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 848, in command_callback
+    return await self.send_bot_help(mapping)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 1038, in send_bot_help
+    filtered = await self.filter_commands(bot.commands, sort=True, key=get_category)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 589, in filter_commands
+    valid = await predicate(cmd)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 583, in predicate
+    return await cmd.can_run(self.context)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/core.py", line 1087, in can_run
+    return await discord.utils.async_all(predicate(ctx) for predicate in predicates)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/utils.py", line 350, in async_all
+    elem = await elem
+  File "/home/runner/py-music-bot/musicbot/cogs/music.py", line 45, in is_audio_requester
+    if permissions.administrator or state.is_requester(ctx.author):
+  File "/home/runner/py-music-bot/musicbot/cogs/music.py", line 331, in is_requester
+    return self.now_playing.requested_by == user
+AttributeError: 'NoneType' object has no attribute 'requested_by'
+
+[2021-09-14 15:21:04,232] WARNING [root.on_command_error:31] Ignoring exception in command help:
+[2021-09-14 15:21:04,233] WARNING [root.on_command_error:32] 
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/core.py", line 85, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 848, in command_callback
+    return await self.send_bot_help(mapping)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 1038, in send_bot_help
+    filtered = await self.filter_commands(bot.commands, sort=True, key=get_category)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 589, in filter_commands
+    valid = await predicate(cmd)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 583, in predicate
+    return await cmd.can_run(self.context)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/core.py", line 1087, in can_run
+    return await discord.utils.async_all(predicate(ctx) for predicate in predicates)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/utils.py", line 350, in async_all
+    elem = await elem
+  File "/home/runner/py-music-bot/musicbot/cogs/music.py", line 45, in is_audio_requester
+    if permissions.administrator or state.is_requester(ctx.author):
+  File "/home/runner/py-music-bot/musicbot/cogs/music.py", line 331, in is_requester
+    return self.now_playing.requested_by == user
+AttributeError: 'NoneType' object has no attribute 'requested_by'
+
+[2021-09-14 15:22:40,964] INFO [discord.client.run:718] Cleaning up tasks.
+[2021-09-14 15:22:40,965] INFO [discord.client._cancel_tasks:71] Cleaning up after 1 tasks.
+[2021-09-14 15:22:40,966] INFO [discord.client._cancel_tasks:76] All tasks finished cancelling.
+[2021-09-14 15:22:40,973] INFO [discord.client._cleanup_loop:94] Closing the event loop.
+[2021-09-14 15:22:44,402] INFO [discord.client.login:510] logging in using static token
+[2021-09-14 15:22:44,628] INFO [discord.gateway.identify:403] Shard ID None has sent the IDENTIFY payload.
+[2021-09-14 15:22:44,747] INFO [discord.gateway.received_message:494] Shard ID None has connected to Gateway: ["gateway-prd-main-5fkx",{"micros":81718,"calls":["discord-sessions-blue-prd-2-107",{"micros":80589,"calls":["start_session",{"micros":33709,"calls":["api-prd-main-mjb9",{"micros":30030,"calls":["get_user",{"micros":2722},"add_authorized_ip",{"micros":2232},"get_guilds",{"micros":6598},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":2,"calls":[]}]}]}] (Session ID: 3000684c16833b1ecab616e0b22984fd).
+[2021-09-14 15:22:46,804] INFO [root.on_ready:15] Logged in as anu malik
+[2021-09-14 15:23:07,402] WARNING [root.on_command_error:31] Ignoring exception in command help:
+[2021-09-14 15:23:07,404] WARNING [root.on_command_error:32] 
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/core.py", line 85, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 848, in command_callback
+    return await self.send_bot_help(mapping)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 1038, in send_bot_help
+    filtered = await self.filter_commands(bot.commands, sort=True, key=get_category)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 589, in filter_commands
+    valid = await predicate(cmd)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/help.py", line 583, in predicate
+    return await cmd.can_run(self.context)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/core.py", line 1087, in can_run
+    return await discord.utils.async_all(predicate(ctx) for predicate in predicates)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/utils.py", line 350, in async_all
+    elem = await elem
+  File "/home/runner/py-music-bot/musicbot/cogs/music.py", line 45, in is_audio_requester
+    if permissions.administrator or state.is_requester(ctx.author):
+  File "/home/runner/py-music-bot/musicbot/cogs/music.py", line 331, in is_requester
+    return self.now_playing.requested_by == user
+AttributeError: 'NoneType' object has no attribute 'requested_by'
+
+[2021-09-14 15:25:06,430] INFO [discord.client.run:718] Cleaning up tasks.
+[2021-09-14 15:25:06,431] INFO [discord.client._cancel_tasks:71] Cleaning up after 1 tasks.
+[2021-09-14 15:25:06,432] INFO [discord.client._cancel_tasks:76] All tasks finished cancelling.
+[2021-09-14 15:25:06,432] INFO [discord.client._cleanup_loop:94] Closing the event loop.
+[2021-09-14 15:25:09,807] INFO [discord.client.login:510] logging in using static token
+[2021-09-14 15:25:10,096] INFO [discord.gateway.identify:403] Shard ID None has sent the IDENTIFY payload.
+[2021-09-14 15:25:10,180] INFO [discord.gateway.received_message:494] Shard ID None has connected to Gateway: ["gateway-prd-main-w9l3",{"micros":40464,"calls":["discord-sessions-blue-prd-2-48",{"micros":39490,"calls":["start_session",{"micros":29928,"calls":["api-prd-main-qsll",{"micros":26475,"calls":["get_user",{"micros":3003},"add_authorized_ip",{"micros":1489},"get_guilds",{"micros":4071},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":0,"calls":[]}]}]}] (Session ID: a572d9da550d0004913b05c9c2bd6786).
+[2021-09-14 15:25:12,292] INFO [root.on_ready:16] Logged in as anu malik
+[2021-09-14 15:28:51,439] INFO [discord.client.run:718] Cleaning up tasks.
+[2021-09-14 15:28:51,439] INFO [discord.client._cancel_tasks:71] Cleaning up after 1 tasks.
+[2021-09-14 15:28:51,440] INFO [discord.client._cancel_tasks:76] All tasks finished cancelling.
+[2021-09-14 15:28:51,441] INFO [discord.client._cleanup_loop:94] Closing the event loop.
+[2021-09-14 15:33:51,321] INFO [discord.client.login:510] logging in using static token
+[2021-09-14 15:33:51,605] INFO [discord.gateway.identify:403] Shard ID None has sent the IDENTIFY payload.
+[2021-09-14 15:33:51,733] INFO [discord.gateway.received_message:494] Shard ID None has connected to Gateway: ["gateway-prd-main-0spf",{"micros":87829,"calls":["discord-sessions-blue-prd-2-101",{"micros":85435,"calls":["start_session",{"micros":48747,"calls":["api-prd-main-gkpt",{"micros":43073,"calls":["get_user",{"micros":3117},"add_authorized_ip",{"micros":3663},"get_guilds",{"micros":6315},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: c794f1bc44cc81adb4e85318c8d3dc69).
+[2021-09-14 15:33:53,880] INFO [root.on_ready:19] Logged in as anu malik
+[2021-09-14 15:34:30,401] INFO [discord.client.run:718] Cleaning up tasks.
+[2021-09-14 15:34:30,401] INFO [discord.client._cancel_tasks:71] Cleaning up after 1 tasks.
+[2021-09-14 15:34:30,403] INFO [discord.client._cancel_tasks:76] All tasks finished cancelling.
+[2021-09-14 15:34:30,403] INFO [discord.client._cleanup_loop:94] Closing the event loop.
+[2021-09-14 15:34:34,162] INFO [discord.client.login:510] logging in using static token
+[2021-09-14 15:34:34,376] INFO [discord.gateway.identify:403] Shard ID None has sent the IDENTIFY payload.
+[2021-09-14 15:34:34,476] INFO [discord.gateway.received_message:494] Shard ID None has connected to Gateway: ["gateway-prd-main-d39h",{"micros":63199,"calls":["discord-sessions-blue-prd-2-134",{"micros":62159,"calls":["start_session",{"micros":47919,"calls":["api-prd-main-rkv7",{"micros":43847,"calls":["get_user",{"micros":6216},"add_authorized_ip",{"micros":2511},"get_guilds",{"micros":5109},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":3,"calls":[]},"presence_connect",{"micros":1300,"calls":[]}]}]}] (Session ID: e944689b779fd3705debcb457e663f39).
+[2021-09-14 15:34:36,513] INFO [root.on_ready:19] Logged in as anu malik
+[2021-09-14 15:36:07,377] INFO [discord.client.run:718] Cleaning up tasks.
+[2021-09-14 15:36:07,378] INFO [discord.client._cancel_tasks:71] Cleaning up after 1 tasks.
+[2021-09-14 15:36:07,379] INFO [discord.client._cancel_tasks:76] All tasks finished cancelling.
+[2021-09-14 15:36:07,379] INFO [discord.client._cleanup_loop:94] Closing the event loop.
+[2021-09-14 15:36:31,945] INFO [discord.client.login:510] logging in using static token
+[2021-09-14 15:36:32,190] INFO [discord.gateway.identify:403] Shard ID None has sent the IDENTIFY payload.
+[2021-09-14 15:36:32,309] INFO [discord.gateway.received_message:494] Shard ID None has connected to Gateway: ["gateway-prd-main-7vsp",{"micros":79198,"calls":["discord-sessions-blue-prd-2-84",{"micros":76721,"calls":["start_session",{"micros":47718,"calls":["api-prd-main-m805",{"micros":44451,"calls":["get_user",{"micros":7029},"add_authorized_ip",{"micros":2916},"get_guilds",{"micros":9451},"coros_wait",{"micros":0}]}]},"guilds_connect",{"micros":3,"calls":[]},"presence_connect",{"micros":26398,"calls":[]}]}]}] (Session ID: 8e2be4fe38d8778b2ec060868add5d6c).
+[2021-09-14 15:36:34,485] INFO [root.on_ready:19] Logged in as anu malik
+[2021-09-14 15:36:36,051] WARNING [root.on_command_error:30] Ignoring exception in command help:
+[2021-09-14 15:36:36,062] WARNING [root.on_command_error:31] 
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/core.py", line 85, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/home/runner/py-music-bot/musicbot/cogs/music.py", line 255, in help
+    await ctx.send("")
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/abc.py", line 1065, in send
+    data = await state.http.send_message(channel.id, content, tts=tts, embed=embed,
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/http.py", line 254, in request
+    raise HTTPException(r, data)
+discord.errors.HTTPException: 400 Bad Request (error code: 50006): Cannot send an empty message
+
+[2021-09-14 15:36:52,869] INFO [discord.client.run:718] Cleaning up tasks.
+[2021-09-14 15:36:52,870] INFO [discord.client._cancel_tasks:71] Cleaning up after 1 tasks.
+[2021-09-14 15:36:52,871] INFO [discord.client._cancel_tasks:76] All tasks finished cancelling.
+[2021-09-14 15:36:52,872] INFO [discord.client._cleanup_loop:94] Closing the event loop.
+[2021-09-14 15:36:56,694] INFO [discord.client.login:510] logging in using static token
+[2021-09-14 15:36:56,960] INFO [discord.gateway.identify:403] Shard ID None has sent the IDENTIFY payload.
+[2021-09-14 15:36:57,061] INFO [discord.gateway.received_message:494] Shard ID None has connected to Gateway: ["gateway-prd-main-bt28",{"micros":61278,"calls":["discord-sessions-blue-prd-2-4",{"micros":60276,"calls":["start_session",{"micros":29497,"calls":["api-prd-main-tbkq",{"micros":26749,"calls":["get_user",{"micros":2445},"add_authorized_ip",{"micros":1569},"get_guilds",{"micros":4253},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":3,"calls":[]},"presence_connect",{"micros":13656,"calls":[]}]}]}] (Session ID: d27cf286522366562e745c2889f98605).
+[2021-09-14 15:36:59,258] INFO [root.on_ready:19] Logged in as anu malik
+[2021-09-14 15:37:41,582] INFO [discord.client.run:718] Cleaning up tasks.
+[2021-09-14 15:37:41,582] INFO [discord.client._cancel_tasks:71] Cleaning up after 1 tasks.
+[2021-09-14 15:37:41,583] INFO [discord.client._cancel_tasks:76] All tasks finished cancelling.
+[2021-09-14 15:37:41,584] INFO [discord.client._cleanup_loop:94] Closing the event loop.
+[2021-09-14 15:38:23,402] INFO [discord.client.login:510] logging in using static token
+[2021-09-14 15:38:23,618] INFO [discord.gateway.identify:403] Shard ID None has sent the IDENTIFY payload.
+[2021-09-14 15:38:23,781] INFO [discord.gateway.received_message:494] Shard ID None has connected to Gateway: ["gateway-prd-main-n8wf",{"micros":121488,"calls":["discord-sessions-blue-prd-2-145",{"micros":115503,"calls":["start_session",{"micros":74704,"calls":["api-prd-main-0ht9",{"micros":69910,"calls":["get_user",{"micros":3884},"add_authorized_ip",{"micros":7412},"get_guilds",{"micros":10730},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":25449,"calls":[]}]}]}] (Session ID: 8a2ab49148a14bfac4c11f320694ddd2).
+[2021-09-14 15:38:25,820] INFO [root.on_ready:19] Logged in as anu malik
+[2021-09-14 15:39:13,242] INFO [discord.client.run:718] Cleaning up tasks.
+[2021-09-14 15:39:13,242] INFO [discord.client._cancel_tasks:71] Cleaning up after 1 tasks.
+[2021-09-14 15:39:13,244] INFO [discord.client._cancel_tasks:76] All tasks finished cancelling.
+[2021-09-14 15:39:13,244] INFO [discord.client._cleanup_loop:94] Closing the event loop.
+[2021-09-14 15:39:16,674] INFO [discord.client.login:510] logging in using static token
+[2021-09-14 15:39:16,980] INFO [discord.gateway.identify:403] Shard ID None has sent the IDENTIFY payload.
+[2021-09-14 15:39:17,161] INFO [discord.gateway.received_message:494] Shard ID None has connected to Gateway: ["gateway-prd-main-l4r2",{"micros":143690,"calls":["discord-sessions-blue-prd-2-96",{"micros":142652,"calls":["start_session",{"micros":66262,"calls":["api-prd-main-6b7g",{"micros":62692,"calls":["get_user",{"micros":9406},"add_authorized_ip",{"micros":3284},"get_guilds",{"micros":5186},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":27041,"calls":[]}]}]}] (Session ID: c0a6faef281a277704df575ed6299eab).
+[2021-09-14 15:39:19,240] INFO [root.on_ready:19] Logged in as anu malik
+[2021-09-14 15:39:22,967] INFO [discord.client.run:718] Cleaning up tasks.
+[2021-09-14 15:39:22,968] INFO [discord.client._cancel_tasks:71] Cleaning up after 1 tasks.
+[2021-09-14 15:39:22,969] INFO [discord.client._cancel_tasks:76] All tasks finished cancelling.
+[2021-09-14 15:39:22,970] INFO [discord.client._cleanup_loop:94] Closing the event loop.
+[2021-09-14 15:40:06,769] INFO [discord.client.login:510] logging in using static token
+[2021-09-14 15:40:07,000] INFO [discord.gateway.identify:403] Shard ID None has sent the IDENTIFY payload.
+[2021-09-14 15:40:07,143] INFO [discord.gateway.received_message:494] Shard ID None has connected to Gateway: ["gateway-prd-main-n4mz",{"micros":102459,"calls":["discord-sessions-blue-prd-2-158",{"micros":100477,"calls":["start_session",{"micros":58753,"calls":["api-prd-main-p4kc",{"micros":51022,"calls":["get_user",{"micros":3822},"add_authorized_ip",{"micros":4136},"get_guilds",{"micros":8702},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":16300,"calls":[]}]}]}] (Session ID: a02ed9ba06cf5d4ee021f6907666eb6d).
+[2021-09-14 15:40:09,271] INFO [root.on_ready:19] Logged in as anu malik
+[2021-09-14 15:40:29,032] INFO [discord.client.run:718] Cleaning up tasks.
+[2021-09-14 15:40:29,036] INFO [discord.client._cancel_tasks:71] Cleaning up after 1 tasks.
+[2021-09-14 15:40:29,038] INFO [discord.client._cancel_tasks:76] All tasks finished cancelling.
+[2021-09-14 15:40:29,038] INFO [discord.client._cleanup_loop:94] Closing the event loop.
+[2021-09-14 15:40:33,093] INFO [discord.client.login:510] logging in using static token
+[2021-09-14 15:40:33,354] INFO [discord.gateway.identify:403] Shard ID None has sent the IDENTIFY payload.
+[2021-09-14 15:40:33,543] INFO [discord.gateway.received_message:494] Shard ID None has connected to Gateway: ["gateway-prd-main-2fk1",{"micros":149517,"calls":["discord-sessions-blue-prd-2-33",{"micros":148005,"calls":["start_session",{"micros":99330,"calls":["api-prd-main-s71j",{"micros":93917,"calls":["get_user",{"micros":5721},"add_authorized_ip",{"micros":3259},"get_guilds",{"micros":39621},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":19007,"calls":[]}]}]}] (Session ID: 547a519e3043e0ef7eec7df007ec4efb).
+[2021-09-14 15:40:35,648] INFO [root.on_ready:19] Logged in as anu malik
+[2021-09-14 15:42:05,036] INFO [discord.client.run:718] Cleaning up tasks.
+[2021-09-14 15:42:05,037] INFO [discord.client._cancel_tasks:71] Cleaning up after 1 tasks.
+[2021-09-14 15:42:05,038] INFO [discord.client._cancel_tasks:76] All tasks finished cancelling.
+[2021-09-14 15:42:05,038] INFO [discord.client._cleanup_loop:94] Closing the event loop.
+[2021-09-14 15:42:08,252] INFO [discord.client.login:510] logging in using static token
+[2021-09-14 15:42:08,486] INFO [discord.gateway.identify:403] Shard ID None has sent the IDENTIFY payload.
+[2021-09-14 15:42:08,595] INFO [discord.gateway.received_message:494] Shard ID None has connected to Gateway: ["gateway-prd-main-397n",{"micros":67918,"calls":["discord-sessions-blue-prd-2-58",{"micros":65804,"calls":["start_session",{"micros":40750,"calls":["api-prd-main-v4ql",{"micros":34930,"calls":["get_user",{"micros":4977},"add_authorized_ip",{"micros":1979},"get_guilds",{"micros":4438},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":0,"calls":[]}]}]}] (Session ID: 1433724b9cdfd141569c28a980e7098e).
+[2021-09-14 15:42:10,627] INFO [root.on_ready:19] Logged in as anu malik
+[2021-09-14 15:43:08,088] INFO [discord.client.run:718] Cleaning up tasks.
+[2021-09-14 15:43:08,089] INFO [discord.client._cancel_tasks:71] Cleaning up after 1 tasks.
+[2021-09-14 15:43:08,090] INFO [discord.client._cancel_tasks:76] All tasks finished cancelling.
+[2021-09-14 15:43:08,090] INFO [discord.client._cleanup_loop:94] Closing the event loop.
+[2021-09-14 15:43:11,771] INFO [discord.client.login:510] logging in using static token
+[2021-09-14 15:43:12,008] INFO [discord.gateway.identify:403] Shard ID None has sent the IDENTIFY payload.
+[2021-09-14 15:43:12,134] INFO [discord.gateway.received_message:494] Shard ID None has connected to Gateway: ["gateway-prd-main-nrpr",{"micros":87627,"calls":["discord-sessions-blue-prd-2-145",{"micros":86612,"calls":["start_session",{"micros":29879,"calls":["api-prd-main-w8nx",{"micros":26121,"calls":["get_user",{"micros":3004},"add_authorized_ip",{"micros":2027},"get_guilds",{"micros":3756},"coros_wait",{"micros":0}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":39005,"calls":[]}]}]}] (Session ID: 94f5c84a31955d1c3eb1d3ddc860a5d0).
+[2021-09-14 15:43:14,164] INFO [root.on_ready:19] Logged in as anu malik
+[2021-09-14 15:44:27,301] INFO [discord.voice_client.connect:329] Connecting to voice...
+[2021-09-14 15:44:27,301] INFO [discord.voice_client.prepare_handshake:311] Starting voice handshake... (connection attempt 1)
+[2021-09-14 15:44:27,574] INFO [discord.voice_client.finish_handshake:315] Voice handshake complete. Endpoint found singapore6431.discord.media
+[2021-09-14 15:44:29,007] INFO [discord.gateway.initial_connection:862] selected the voice protocol for use (xsalsa20_poly1305_lite)
+[2021-09-14 15:44:29,249] INFO [discord.gateway.load_secret_key:880] received secret key for voice connection
+[2021-09-14 15:44:30,406] INFO [root.play:289] Now playing 'Ravel - Pavane for a Dead Princess (Pavane pour une infante défunte)'
+[2021-09-14 15:48:18,880] INFO [discord.client.login:510] logging in using static token
+[2021-09-14 15:48:19,217] INFO [discord.gateway.identify:403] Shard ID None has sent the IDENTIFY payload.
+[2021-09-14 15:48:19,383] INFO [discord.gateway.received_message:494] Shard ID None has connected to Gateway: ["gateway-prd-main-b899",{"micros":76635,"calls":["discord-sessions-blue-prd-2-113",{"micros":68336,"calls":["start_session",{"micros":50939,"calls":["api-prd-main-9d4b",{"micros":44485,"calls":["get_user",{"micros":4709},"add_authorized_ip",{"micros":1425},"get_guilds",{"micros":6472},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":6225,"calls":[]}]}]}] (Session ID: 1e9ca2d9ea4080e1b74db3ace8d8fdae).
+[2021-09-14 15:48:21,456] INFO [root.on_ready:19] Logged in as anu malik
+[2021-09-14 15:48:45,064] INFO [discord.voice_client.connect:329] Connecting to voice...
+[2021-09-14 15:48:45,064] INFO [discord.voice_client.prepare_handshake:311] Starting voice handshake... (connection attempt 1)
+[2021-09-14 15:48:46,385] INFO [discord.voice_client.finish_handshake:315] Voice handshake complete. Endpoint found singapore575.discord.media
+[2021-09-14 15:48:47,604] INFO [discord.gateway.initial_connection:862] selected the voice protocol for use (xsalsa20_poly1305_lite)
+[2021-09-14 15:48:47,808] INFO [discord.gateway.load_secret_key:880] received secret key for voice connection
+[2021-09-14 15:48:49,112] INFO [root.play:289] Now playing 'Ravel - Pavane for a Dead Princess (Pavane pour une infante défunte)'
+[2021-09-14 15:49:39,367] INFO [discord.client.login:510] logging in using static token
+[2021-09-14 15:49:39,666] INFO [discord.gateway.identify:403] Shard ID None has sent the IDENTIFY payload.
+[2021-09-14 15:49:39,834] INFO [discord.gateway.received_message:494] Shard ID None has connected to Gateway: ["gateway-prd-main-drcs",{"micros":59042,"calls":["discord-sessions-blue-prd-2-42",{"micros":57277,"calls":["start_session",{"micros":28678,"calls":["api-prd-main-02jx",{"micros":25011,"calls":["get_user",{"micros":2593},"add_authorized_ip",{"micros":2024},"get_guilds",{"micros":3689},"coros_wait",{"micros":0}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":16658,"calls":[]}]}]}] (Session ID: ddab5d8c7fa02cad4a1c690f8c7d1fa3).
+[2021-09-14 15:49:41,862] INFO [root.on_ready:19] Logged in as anu malik
+[2021-09-14 15:49:46,257] INFO [discord.voice_client.connect:329] Connecting to voice...
+[2021-09-14 15:49:46,257] INFO [discord.voice_client.prepare_handshake:311] Starting voice handshake... (connection attempt 1)
+[2021-09-14 15:49:47,287] INFO [discord.voice_client.finish_handshake:315] Voice handshake complete. Endpoint found singapore575.discord.media
+[2021-09-14 15:49:48,504] INFO [discord.gateway.initial_connection:862] selected the voice protocol for use (xsalsa20_poly1305_lite)
+[2021-09-14 15:49:48,716] INFO [discord.gateway.load_secret_key:880] received secret key for voice connection
+[2021-09-14 15:49:49,839] INFO [root.play:287] Now playing 'Ravel - Pavane for a Dead Princess (Pavane pour une infante défunte)'
+[2021-09-14 15:50:19,847] INFO [discord.player.cleanup:158] Preparing to terminate ffmpeg process 182.
+[2021-09-14 15:50:19,848] INFO [discord.player.cleanup:166] ffmpeg process 182 has not terminated. Waiting to terminate...
+[2021-09-14 15:50:19,852] INFO [discord.voice_client.voice_disconnect:304] The voice handshake is being terminated for Channel ID 838803234390802517 (Guild ID 838803234390802513)
+[2021-09-14 15:50:19,872] INFO [discord.player.cleanup:168] ffmpeg process 182 should have terminated with a return code of -9.
+[2021-09-14 15:50:19,872] INFO [discord.voice_client.poll_voice_ws:422] Disconnecting from voice normally, close code 1000.
+[2021-09-14 15:50:25,716] INFO [discord.client.run:718] Cleaning up tasks.
+[2021-09-14 15:50:25,717] INFO [discord.client._cancel_tasks:71] Cleaning up after 1 tasks.
+[2021-09-14 15:50:25,718] INFO [discord.client._cancel_tasks:76] All tasks finished cancelling.
+[2021-09-14 15:50:25,719] INFO [discord.client._cleanup_loop:94] Closing the event loop.
+[2021-09-14 16:45:58,636] INFO [discord.client.login:510] logging in using static token
+[2021-09-14 16:45:58,986] INFO [discord.gateway.identify:403] Shard ID None has sent the IDENTIFY payload.
+[2021-09-14 16:45:59,171] INFO [discord.gateway.received_message:494] Shard ID None has connected to Gateway: ["gateway-prd-main-5sn4",{"micros":102136,"calls":["discord-sessions-blue-prd-2-102",{"micros":101235,"calls":["start_session",{"micros":52544,"calls":["api-prd-main-kmzh",{"micros":49799,"calls":["get_user",{"micros":2855},"add_authorized_ip",{"micros":4920},"get_guilds",{"micros":6868},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: 926ade6c5b9ed3cf3001061d6f8259e0).
+[2021-09-14 16:46:01,197] INFO [root.on_ready:19] Logged in as anu malik
+[2021-09-14 16:51:38,688] WARNING [root.on_command_error:30] Ignoring exception in command play:
+[2021-09-14 16:51:38,690] WARNING [root.on_command_error:31] 
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/core.py", line 85, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/home/runner/py-music-bot/musicbot/cogs/music.py", line 283, in play
+    client = await channel.connect()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/abc.py", line 1277, in connect
+    voice = cls(client, self)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/voice_client.py", line 199, in __init__
+    raise RuntimeError("PyNaCl library needed in order to use voice")
+RuntimeError: PyNaCl library needed in order to use voice
+
+[2021-09-14 16:51:58,606] WARNING [root.on_command_error:30] Ignoring exception in command play:
+[2021-09-14 16:51:58,606] WARNING [root.on_command_error:31] 
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/core.py", line 85, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/home/runner/py-music-bot/musicbot/cogs/music.py", line 283, in play
+    client = await channel.connect()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/abc.py", line 1277, in connect
+    voice = cls(client, self)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/voice_client.py", line 199, in __init__
+    raise RuntimeError("PyNaCl library needed in order to use voice")
+RuntimeError: PyNaCl library needed in order to use voice
+
+[2021-09-14 16:52:42,977] INFO [discord.client.run:718] Cleaning up tasks.
+[2021-09-14 16:52:42,977] INFO [discord.client._cancel_tasks:71] Cleaning up after 1 tasks.
+[2021-09-14 16:52:42,979] INFO [discord.client._cancel_tasks:76] All tasks finished cancelling.
+[2021-09-14 16:52:42,979] INFO [discord.client._cleanup_loop:94] Closing the event loop.
+[2021-09-14 16:52:54,196] INFO [discord.client.login:510] logging in using static token
+[2021-09-14 16:52:54,517] INFO [discord.gateway.identify:403] Shard ID None has sent the IDENTIFY payload.
+[2021-09-14 16:52:54,688] INFO [discord.gateway.received_message:494] Shard ID None has connected to Gateway: ["gateway-prd-main-s6fh",{"micros":80679,"calls":["discord-sessions-blue-prd-2-84",{"micros":79789,"calls":["start_session",{"micros":37240,"calls":["api-prd-main-tbkq",{"micros":33148,"calls":["get_user",{"micros":3332},"add_authorized_ip",{"micros":2399},"get_guilds",{"micros":8013},"coros_wait",{"micros":0}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":14697,"calls":[]}]}]}] (Session ID: 189aacf50af8f309c949a05c82065a11).
+[2021-09-14 16:52:56,713] INFO [root.on_ready:19] Logged in as anu malik
+[2021-09-14 16:53:05,522] WARNING [root.on_command_error:30] Ignoring exception in command play:
+[2021-09-14 16:53:05,524] WARNING [root.on_command_error:31] 
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/commands/core.py", line 85, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/home/runner/py-music-bot/musicbot/cogs/music.py", line 283, in play
+    client = await channel.connect()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/abc.py", line 1277, in connect
+    voice = cls(client, self)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/voice_client.py", line 199, in __init__
+    raise RuntimeError("PyNaCl library needed in order to use voice")
+RuntimeError: PyNaCl library needed in order to use voice
+
+[2021-09-14 16:53:43,191] INFO [discord.client.run:718] Cleaning up tasks.
+[2021-09-14 16:53:43,191] INFO [discord.client._cancel_tasks:71] Cleaning up after 1 tasks.
+[2021-09-14 16:53:43,192] INFO [discord.client._cancel_tasks:76] All tasks finished cancelling.
+[2021-09-14 16:53:43,193] INFO [discord.client._cleanup_loop:94] Closing the event loop.
+[2021-09-14 16:53:59,509] INFO [discord.client.login:510] logging in using static token
+[2021-09-14 16:53:59,844] INFO [discord.gateway.identify:403] Shard ID None has sent the IDENTIFY payload.
+[2021-09-14 16:54:00,032] INFO [discord.gateway.received_message:494] Shard ID None has connected to Gateway: ["gateway-prd-main-6l0g",{"micros":99471,"calls":["discord-sessions-blue-prd-2-64",{"micros":94110,"calls":["start_session",{"micros":38594,"calls":["api-prd-main-rk2h",{"micros":34907,"calls":["get_user",{"micros":4233},"add_authorized_ip",{"micros":1575},"get_guilds",{"micros":6635},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":0,"calls":[]}]}]}] (Session ID: ed351cbe606bf44523ddc69eb7e49aea).
+[2021-09-14 16:54:02,057] INFO [root.on_ready:19] Logged in as anu malik
+[2021-09-14 16:54:16,096] INFO [discord.voice_client.connect:329] Connecting to voice...
+[2021-09-14 16:54:16,097] INFO [discord.voice_client.prepare_handshake:311] Starting voice handshake... (connection attempt 1)
+[2021-09-14 16:54:17,080] INFO [discord.voice_client.finish_handshake:315] Voice handshake complete. Endpoint found singapore5607.discord.media
+[2021-09-14 16:54:18,400] INFO [discord.gateway.initial_connection:862] selected the voice protocol for use (xsalsa20_poly1305_lite)
+[2021-09-14 16:54:18,627] INFO [discord.gateway.load_secret_key:880] received secret key for voice connection
+[2021-09-14 16:54:20,006] INFO [root.play:287] Now playing 'Jetpack Joyride OST 🎼🎹 - Main Theme'
+[2021-09-14 16:56:36,225] INFO [discord.player.cleanup:158] Preparing to terminate ffmpeg process 226.
+[2021-09-14 16:56:36,226] INFO [discord.player.cleanup:170] ffmpeg process 226 successfully terminated with return code of 0.
+[2021-09-14 16:56:36,228] INFO [discord.voice_client.voice_disconnect:304] The voice handshake is being terminated for Channel ID 880877929016483850 (Guild ID 835846500147920957)
+[2021-09-14 16:56:36,228] INFO [discord.voice_client.poll_voice_ws:422] Disconnecting from voice normally, close code 1000.
+[2021-09-14 16:58:47,112] INFO [discord.voice_client.connect:329] Connecting to voice...
+[2021-09-14 16:58:47,113] INFO [discord.voice_client.prepare_handshake:311] Starting voice handshake... (connection attempt 1)
+[2021-09-14 16:58:48,106] INFO [discord.voice_client.finish_handshake:315] Voice handshake complete. Endpoint found singapore5607.discord.media
+[2021-09-14 16:58:49,363] INFO [discord.gateway.initial_connection:862] selected the voice protocol for use (xsalsa20_poly1305_lite)
+[2021-09-14 16:58:49,578] INFO [discord.gateway.load_secret_key:880] received secret key for voice connection
+[2021-09-14 16:58:50,965] INFO [root.play:287] Now playing 'Nigga Cat'
+[2021-09-14 16:59:54,505] INFO [discord.player.cleanup:158] Preparing to terminate ffmpeg process 242.
+[2021-09-14 16:59:54,506] INFO [discord.player.cleanup:170] ffmpeg process 242 successfully terminated with return code of 0.
+[2021-09-14 16:59:54,507] INFO [discord.voice_client.voice_disconnect:304] The voice handshake is being terminated for Channel ID 880877929016483850 (Guild ID 835846500147920957)
+[2021-09-14 16:59:54,508] INFO [discord.voice_client.poll_voice_ws:422] Disconnecting from voice normally, close code 1000.
+[2021-09-14 17:01:13,484] INFO [discord.voice_client.connect:329] Connecting to voice...
+[2021-09-14 17:01:13,484] INFO [discord.voice_client.prepare_handshake:311] Starting voice handshake... (connection attempt 1)
+[2021-09-14 17:01:13,798] INFO [discord.voice_client.finish_handshake:315] Voice handshake complete. Endpoint found singapore5607.discord.media
+[2021-09-14 17:01:15,026] INFO [discord.gateway.initial_connection:862] selected the voice protocol for use (xsalsa20_poly1305_lite)
+[2021-09-14 17:01:15,231] INFO [discord.gateway.load_secret_key:880] received secret key for voice connection
+[2021-09-14 17:01:16,570] INFO [root.play:287] Now playing 'Alexander Rybak – Fairytale (LYRICS)'
+[2021-09-14 17:04:18,098] INFO [discord.player.cleanup:158] Preparing to terminate ffmpeg process 257.
+[2021-09-14 17:04:18,099] INFO [discord.player.cleanup:170] ffmpeg process 257 successfully terminated with return code of 0.
+[2021-09-14 17:08:59,785] INFO [discord.player.cleanup:158] Preparing to terminate ffmpeg process 263.
+[2021-09-14 17:08:59,786] INFO [discord.player.cleanup:170] ffmpeg process 263 successfully terminated with return code of 0.
+[2021-09-14 17:12:04,673] INFO [discord.player.cleanup:158] Preparing to terminate ffmpeg process 298.
+[2021-09-14 17:12:04,674] INFO [discord.player.cleanup:170] ffmpeg process 298 successfully terminated with return code of 0.
