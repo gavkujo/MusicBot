@@ -4,4 +4,3 @@ libopus-dev -y
 libssl-dev
 libffi-dev -y
 libsodium-dev -y
-mc3man/xerus-media -y
