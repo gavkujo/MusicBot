@@ -1,3 +1,4 @@
-discord
-youtube_dl
-pynacl
+discord.py==1.7.3
+youtube-dl==2021.6.6
+PyNaCl==1.4.0
+toml==0.10.2

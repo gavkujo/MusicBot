@@ -5,6 +5,7 @@ import sys
 from discord.ext import commands
 from .cogs import music, error, meta, tips
 from . import config
+import os
 
 cfg = config.load_config()
 
@@ -34,4 +35,4 @@ def run():
             "No token has been provided. Please ensure that config.toml contains the bot token."
         )
         sys.exit(1)
-    bot.run(cfg["token"])
+    bot.run(os.getenv("DISCORD_TOKEN"))
